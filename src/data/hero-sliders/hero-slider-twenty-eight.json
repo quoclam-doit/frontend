@@ -20,4 +20,27 @@
     "image": "/assets/img/slider/3.jpg",
     "url": "/shop-grid-standard"
   }
+  ,
+  {
+    "id": 4,
+    "title": "Best Products Collection",
+    "subtitle": "Final Sale For <br /> 2023",
+    "image": "/assets/img/slider/4.jpg",
+    "url": "/shop-grid-standard"
+  },
+  {
+    "id": 5,
+    "title": "Best Products Collection",
+    "subtitle": "Final Sale For <br /> 2023",
+    "image": "/assets/img/slider/5.jpg",
+    "url": "/shop-grid-standard"
+  },
+  {
+    "id": 6,
+    "title": "Best Products Collection",
+    "subtitle": "Final Sale For <br /> 2023",
+    "image": "/assets/img/slider/6.jpg",
+    "url": "/shop-grid-standard"
+  }
+  
 ]
