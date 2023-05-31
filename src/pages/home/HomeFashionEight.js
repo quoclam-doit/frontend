@@ -21,7 +21,9 @@ const HomeFashionEight = () => {
         />
       </MetaTags>
       <LayoutOne
-        headerTop="visible">
+        headerContainerClass="container-fluid"
+        headerPaddingClass="header-padding-1"
+      >
         {/* hero slider */}
         <HeroSliderTwentyEight />
         {/* feature text */}

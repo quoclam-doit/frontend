@@ -1,9 +1,9 @@
 import { SET_CURRENCY } from "../actions/currencyActions";
 
 const initState = {
-  currencySymbol: "$",
-  currencyName: "USD",
-  currencyRate: 1.072674
+  currencySymbol: "€",
+  currencyName: "EUR",
+  currencyRate: 1
 };
 
 const currencyReducer = (state = initState, action) => {

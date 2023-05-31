@@ -56,7 +56,7 @@ const BannerThirtyOne = ({ spaceBottomClass }) => {
 };
 
 BannerThirtyOne.propTypes = {
-  spaceBottomClass: PropTypes.string,
+  spaceBottomClass: PropTypes.string
 };
 
 export default BannerThirtyOne;

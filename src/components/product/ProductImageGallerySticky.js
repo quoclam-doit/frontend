@@ -35,7 +35,7 @@ const productImageGallerySticky = ({ product }) => {
 };
 
 productImageGallerySticky.propTypes = {
-  product: PropTypes.object,
+  product: PropTypes.object
 };
 
 export default productImageGallerySticky;

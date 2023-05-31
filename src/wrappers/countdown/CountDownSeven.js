@@ -31,7 +31,7 @@ const CountDownSeven = ({ bgColorClass, spaceTopClass, dateTime }) => {
 CountDownSeven.propTypes = {
   bgColorClass: PropTypes.string,
   dateTime: PropTypes.string,
-  spaceTopClass: PropTypes.string,
+  spaceTopClass: PropTypes.string
 };
 
 export default CountDownSeven;

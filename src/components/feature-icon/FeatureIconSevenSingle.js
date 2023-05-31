@@ -22,7 +22,7 @@ const FeatureIconSevenSingle = ({ data, spaceBottomClass, textAlignClass }) => {
 FeatureIconSevenSingle.propTypes = {
   data: PropTypes.object,
   spaceBottomClass: PropTypes.string,
-  textAlignClass: PropTypes.string,
+  textAlignClass: PropTypes.string
 };
 
 export default FeatureIconSevenSingle;

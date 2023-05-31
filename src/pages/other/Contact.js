@@ -53,7 +53,9 @@ const Contact = ({ location }) => {
                         </a>
                       </p>
                       <p>
-                        <a href="partypals.com.vn">partypals.com.vn</a>
+                        <a href="partypals.com.vn">
+                          partypals.com.vn
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -79,6 +81,7 @@ const Contact = ({ location }) => {
                           <i className="fa fa-instagram" />
                         </a>
                       </li>
+                      
                     </ul>
                   </div>
                 </div>
@@ -127,7 +130,7 @@ const Contact = ({ location }) => {
 };
 
 Contact.propTypes = {
-  location: PropTypes.object,
+  location: PropTypes.object
 };
 
 export default Contact;

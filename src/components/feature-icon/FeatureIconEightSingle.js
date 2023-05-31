@@ -22,7 +22,7 @@ const FeatureIconEightSingle = ({ data, spaceBottomClass, textAlignClass }) => {
 
 FeatureIconEightSingle.propTypes = {
   data: PropTypes.object,
-  spaceBottomClass: PropTypes.string,
+  spaceBottomClass: PropTypes.string
 };
 
 export default FeatureIconEightSingle;

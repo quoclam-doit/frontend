@@ -17,7 +17,7 @@ const ProductGridSingleTwo = ({
   sliderClassName,
   spaceBottomClass,
   colorClass,
-  titlePriceClass,
+  titlePriceClass
 }) => {
   const [modalShow, setModalShow] = useState(false);
   const { addToast } = useToasts();
@@ -204,7 +204,7 @@ ProductGridSingleTwo.propTypes = {
   spaceBottomClass: PropTypes.string,
   colorClass: PropTypes.string,
   titlePriceClass: PropTypes.string,
-  wishlistItem: PropTypes.object,
+  wishlistItem: PropTypes.object
 };
 
 export default ProductGridSingleTwo;

@@ -12,7 +12,7 @@ const HeroSliderThirtyFive = () => {
         style={{
           backgroundImage: `url(${
             process.env.PUBLIC_URL + sliderData.backgroundImage
-          })`,
+          })`
         }}
       >
         <div className="container">

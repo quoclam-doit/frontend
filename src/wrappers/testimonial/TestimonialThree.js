@@ -10,8 +10,8 @@ const TestimonialThree = () => {
     loop: true,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false,
-    },
+      disableOnInteraction: false
+    }
   };
 
   return (
@@ -20,7 +20,7 @@ const TestimonialThree = () => {
       style={{
         backgroundImage: `url(${
           process.env.PUBLIC_URL + "/assets/img/bg/testimonial-bg-2.jpg"
-        })`,
+        })`
       }}
     >
       <div className="container">

@@ -9,7 +9,7 @@ const TeamMemberOneSingle = ({ data, spaceBottomClass }) => {
       >
         <div className="team-img">
           <img
-            style={{ height: "300px" }}
+          style={{height:'300px'}}
             src={process.env.PUBLIC_URL + data.image}
             alt=""
             className="img-fluid"
@@ -44,7 +44,7 @@ const TeamMemberOneSingle = ({ data, spaceBottomClass }) => {
 
 TeamMemberOneSingle.propTypes = {
   data: PropTypes.object,
-  spaceBottomClass: PropTypes.string,
+  spaceBottomClass: PropTypes.string
 };
 
 export default TeamMemberOneSingle;

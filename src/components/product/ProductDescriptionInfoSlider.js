@@ -20,7 +20,7 @@ const ProductDescriptionInfoSlider = ({
   addToast,
   addToCart,
   addToWishlist,
-  addToCompare,
+  addToCompare
 }) => {
   const [selectedProductColor, setSelectedProductColor] = useState(
     product.variation ? product.variation[0].color : ""
@@ -99,6 +99,7 @@ const ProductDescriptionInfoSlider = ({
               })}
             </div>
           </div>
+          
         </div>
       ) : (
         ""
@@ -278,10 +279,10 @@ ProductDescriptionInfoSlider.propTypes = {
   finalDiscountedPrice: PropTypes.number,
   finalProductPrice: PropTypes.number,
   product: PropTypes.object,
-  wishlistItem: PropTypes.object,
+  wishlistItem: PropTypes.object
 };
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {
     addToCart: (
       item,
@@ -305,7 +306,7 @@ const mapDispatchToProps = (dispatch) => {
     },
     addToCompare: (item, addToast) => {
       dispatch(addToCompare(item, addToast));
-    },
+    }
   };
 };
 

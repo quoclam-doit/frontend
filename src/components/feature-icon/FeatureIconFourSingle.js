@@ -28,7 +28,7 @@ const FeatureIconFourSingle = ({ data, spaceBottomClass }) => {
 
 FeatureIconFourSingle.propTypes = {
   data: PropTypes.object,
-  spaceBottomClass: PropTypes.string,
+  spaceBottomClass: PropTypes.string
 };
 
 export default FeatureIconFourSingle;

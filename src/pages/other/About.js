@@ -58,7 +58,7 @@ const About = ({ location }) => {
 };
 
 About.propTypes = {
-  location: PropTypes.object,
+  location: PropTypes.object
 };
 
 export default About;

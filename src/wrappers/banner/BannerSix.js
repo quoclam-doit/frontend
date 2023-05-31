@@ -79,7 +79,7 @@ const BannerSix = ({ spaceTopClass, spaceBottomClass }) => {
 
 BannerSix.propTypes = {
   spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string,
+  spaceTopClass: PropTypes.string
 };
 
 export default BannerSix;

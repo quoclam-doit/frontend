@@ -68,7 +68,7 @@ const BannerThirtySix = ({ spaceBottomClass }) => {
 };
 
 BannerThirtySix.propTypes = {
-  spaceBottomClass: PropTypes.string,
+  spaceBottomClass: PropTypes.string
 };
 
 export default BannerThirtySix;

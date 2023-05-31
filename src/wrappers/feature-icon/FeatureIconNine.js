@@ -10,7 +10,7 @@ const FeatureIconNine = ({
   gutterClass,
   responsiveClass,
   bgImg,
-  bgColorClass,
+  bgColorClass
 }) => {
   return (
     <div
@@ -54,7 +54,7 @@ FeatureIconNine.propTypes = {
   responsiveClass: PropTypes.string,
   spaceBottomClass: PropTypes.string,
   spaceTopClass: PropTypes.string,
-  bgColorClass: PropTypes.string,
+  bgColorClass: PropTypes.string
 };
 
 export default FeatureIconNine;

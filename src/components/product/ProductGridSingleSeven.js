@@ -16,7 +16,7 @@ const ProductGridSingleSeven = ({
   compareItem,
   sliderClassName,
   spaceBottomClass,
-  colorClass,
+  colorClass
 }) => {
   const [modalShow, setModalShow] = useState(false);
   const { addToast } = useToasts();
@@ -197,7 +197,7 @@ ProductGridSingleSeven.propTypes = {
   sliderClassName: PropTypes.string,
   spaceBottomClass: PropTypes.string,
   colorClass: PropTypes.string,
-  wishlistItem: PropTypes.object,
+  wishlistItem: PropTypes.object
 };
 
 export default ProductGridSingleSeven;

@@ -8,7 +8,7 @@ const CountDownEight = ({
   backgroundImage,
   dateTime,
   spaceTopClass,
-  spaceBottomClass,
+  spaceBottomClass
 }) => {
   return (
     <div
@@ -16,7 +16,7 @@ const CountDownEight = ({
         spaceTopClass ? spaceTopClass : ""
       } ${spaceBottomClass ? spaceBottomClass : ""}`}
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL + backgroundImage})`,
+        backgroundImage: `url(${process.env.PUBLIC_URL + backgroundImage})`
       }}
     >
       <div className="container">
@@ -44,7 +44,7 @@ CountDownEight.propTypes = {
   backgroundImage: PropTypes.string,
   dateTime: PropTypes.string,
   spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string,
+  spaceTopClass: PropTypes.string
 };
 
 export default CountDownEight;

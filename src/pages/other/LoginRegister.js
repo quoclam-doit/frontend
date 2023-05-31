@@ -117,7 +117,7 @@ const LoginRegister = ({ location }) => {
 };
 
 LoginRegister.propTypes = {
-  location: PropTypes.object,
+  location: PropTypes.object
 };
 
 export default LoginRegister;

@@ -21,7 +21,7 @@ const TestimonialOneSingle = ({ data, sliderClass, testimonialClass }) => {
 
 TestimonialOneSingle.propTypes = {
   data: PropTypes.object,
-  sliderClass: PropTypes.string,
+  sliderClass: PropTypes.string
 };
 
 export default TestimonialOneSingle;

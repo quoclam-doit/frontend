@@ -13,7 +13,7 @@ const VideoPopupTwo = ({ spaceBottomClass }) => {
         style={{
           backgroundImage: `url(${
             process.env.PUBLIC_URL + "/assets/img/bg/bg-7.jpg"
-          })`,
+          })`
         }}
       >
         <div className="video-popup-2__content">
@@ -47,7 +47,7 @@ const VideoPopupTwo = ({ spaceBottomClass }) => {
         style={{
           backgroundImage: `url(${
             process.env.PUBLIC_URL + "/assets/img/bg/bg-8.jpg"
-          })`,
+          })`
         }}
       ></div>
     </div>

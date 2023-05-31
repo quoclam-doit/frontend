@@ -24,7 +24,7 @@ const CategoryFiveSingle = ({ data }) => {
 };
 
 CategoryFiveSingle.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.object
 };
 
 export default CategoryFiveSingle;

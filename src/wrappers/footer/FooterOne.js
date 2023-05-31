@@ -13,7 +13,7 @@ const FooterOne = ({
   spaceRightClass,
   containerClass,
   extraFooterClass,
-  sideMenu,
+  sideMenu
 }) => {
   const [scroll, setScroll] = useState(0);
   const [top, setTop] = useState(0);
@@ -71,12 +71,13 @@ const FooterOne = ({
                   <li>
                     <Link to={process.env.PUBLIC_URL + "/about"}>About us</Link>
                   </li>
-
+                  
                   <li>
                     <Link to={process.env.PUBLIC_URL + "/contact"}>
                       Contact
                     </Link>
                   </li>
+                  
                 </ul>
               </div>
             </div>
@@ -131,7 +132,7 @@ const FooterOne = ({
                       Facebook
                     </a>
                   </li>
-
+                  
                   <li>
                     <a
                       href="//www.instagram.com"
@@ -141,6 +142,7 @@ const FooterOne = ({
                       Instagram
                     </a>
                   </li>
+                  
                 </ul>
               </div>
             </div>
@@ -177,7 +179,7 @@ FooterOne.propTypes = {
   spaceBottomClass: PropTypes.string,
   spaceTopClass: PropTypes.string,
   spaceLeftClass: PropTypes.string,
-  spaceRightClass: PropTypes.string,
+  spaceRightClass: PropTypes.string
 };
 
 export default FooterOne;

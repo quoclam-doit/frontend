@@ -42,7 +42,7 @@ const HeroSliderTwoSingle = ({ data, sliderClassName }) => {
 
 HeroSliderTwoSingle.propTypes = {
   data: PropTypes.object,
-  sliderClassName: PropTypes.string,
+  sliderClassName: PropTypes.string
 };
 
 export default HeroSliderTwoSingle;
