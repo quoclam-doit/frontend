@@ -28,7 +28,7 @@ const CategoryThreeSingle = ({ data, sliderClass }) => {
 
 CategoryThreeSingle.propTypes = {
   data: PropTypes.object,
-  sliderClass: PropTypes.string
+  sliderClass: PropTypes.string,
 };
 
 export default CategoryThreeSingle;

@@ -41,7 +41,7 @@ const BlogFeaturedSingle = ({ singlePost }) => {
 };
 
 BlogFeaturedSingle.propTypes = {
-  singlePost: PropTypes.object
+  singlePost: PropTypes.object,
 };
 
 export default BlogFeaturedSingle;

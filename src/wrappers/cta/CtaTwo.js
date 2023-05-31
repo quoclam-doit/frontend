@@ -11,7 +11,7 @@ const CtaTwo = ({ spaceTopClass, spaceBottomClass }) => {
       style={{
         backgroundImage: `url(${
           process.env.PUBLIC_URL + "/assets/img/bg/cta-bg.jpg"
-        })`
+        })`,
       }}
     >
       <div className="container">
@@ -40,7 +40,7 @@ const CtaTwo = ({ spaceTopClass, spaceBottomClass }) => {
 
 CtaTwo.propTypes = {
   spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string
+  spaceTopClass: PropTypes.string,
 };
 
 export default CtaTwo;

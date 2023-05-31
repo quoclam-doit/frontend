@@ -22,7 +22,7 @@ const FeatureIconSingle = ({ singleFeature }) => {
 };
 
 FeatureIconSingle.propTypes = {
-  singleFeature: PropTypes.object
+  singleFeature: PropTypes.object,
 };
 
 export default FeatureIconSingle;

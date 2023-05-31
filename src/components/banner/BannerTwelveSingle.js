@@ -29,7 +29,7 @@ const BannerTwelveSingle = ({ data, spaceBottomClass }) => {
 
 BannerTwelveSingle.propTypes = {
   data: PropTypes.object,
-  spaceBottomClass: PropTypes.string
+  spaceBottomClass: PropTypes.string,
 };
 
 export default BannerTwelveSingle;

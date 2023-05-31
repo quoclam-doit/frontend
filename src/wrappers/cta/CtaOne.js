@@ -9,7 +9,7 @@ const CtaOne = ({ spaceTopClass, backgroundImage }) => {
         <div
           className="bg-img pt-100 pb-100"
           style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + backgroundImage})`
+            backgroundImage: `url(${process.env.PUBLIC_URL + backgroundImage})`,
           }}
         >
           <div className="save-money-content">
@@ -28,7 +28,7 @@ const CtaOne = ({ spaceTopClass, backgroundImage }) => {
 
 CtaOne.propTypes = {
   backgroundImage: PropTypes.string,
-  spaceTopClass: PropTypes.string
+  spaceTopClass: PropTypes.string,
 };
 
 export default CtaOne;

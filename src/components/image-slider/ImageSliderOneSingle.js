@@ -14,7 +14,7 @@ const ImageSliderOneSingle = ({ data, sliderClass }) => {
 
 ImageSliderOneSingle.propTypes = {
   data: PropTypes.object,
-  sliderClass: PropTypes.string
+  sliderClass: PropTypes.string,
 };
 
 export default ImageSliderOneSingle;

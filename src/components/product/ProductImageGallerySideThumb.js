@@ -26,7 +26,7 @@ const ProductImageGalleryLeftThumb = ({ product, thumbPosition }) => {
     spaceBetween: 10,
     loopedSlides: 4,
     loop: true,
-    effect: "fade"
+    effect: "fade",
   };
 
   const thumbnailSwiperParams = {
@@ -41,25 +41,25 @@ const ProductImageGalleryLeftThumb = ({ product, thumbPosition }) => {
     breakpoints: {
       1200: {
         slidesPerView: 4,
-        direction: "vertical"
+        direction: "vertical",
       },
       992: {
         slidesPerView: 4,
-        direction: "horizontal"
+        direction: "horizontal",
       },
       768: {
         slidesPerView: 4,
-        direction: "horizontal"
+        direction: "horizontal",
       },
       640: {
         slidesPerView: 4,
-        direction: "horizontal"
+        direction: "horizontal",
       },
       320: {
         slidesPerView: 4,
-        direction: "horizontal"
-      }
-    }
+        direction: "horizontal",
+      },
+    },
   };
 
   return (
@@ -146,7 +146,7 @@ const ProductImageGalleryLeftThumb = ({ product, thumbPosition }) => {
 
 ProductImageGalleryLeftThumb.propTypes = {
   product: PropTypes.object,
-  thumbPosition: PropTypes.string
+  thumbPosition: PropTypes.string,
 };
 
 export default ProductImageGalleryLeftThumb;

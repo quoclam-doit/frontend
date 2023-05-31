@@ -26,7 +26,7 @@ const FeatureIconTwoSingle = ({ data, spaceBottomClass, textAlignClass }) => {
 FeatureIconTwoSingle.propTypes = {
   data: PropTypes.object,
   spaceBottomClass: PropTypes.string,
-  textAlignClass: PropTypes.string
+  textAlignClass: PropTypes.string,
 };
 
 export default FeatureIconTwoSingle;

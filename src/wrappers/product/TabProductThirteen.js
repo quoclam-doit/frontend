@@ -10,7 +10,7 @@ const TabProductThirteen = ({
   spaceTopClass,
   spaceBottomClass,
   bgColorClass,
-  category
+  category,
 }) => {
   return (
     <div
@@ -95,7 +95,7 @@ TabProductThirteen.propTypes = {
   bgColorClass: PropTypes.string,
   category: PropTypes.string,
   spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string
+  spaceTopClass: PropTypes.string,
 };
 
 export default TabProductThirteen;

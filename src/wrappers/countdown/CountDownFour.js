@@ -8,7 +8,7 @@ const CountDownFour = ({
   spaceTopClass,
   spaceBottomClass,
   dateTime,
-  countDownImage
+  countDownImage,
 }) => {
   return (
     <div
@@ -52,7 +52,7 @@ CountDownFour.propTypes = {
   countDownImage: PropTypes.string,
   dateTime: PropTypes.string,
   spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string
+  spaceTopClass: PropTypes.string,
 };
 
 export default CountDownFour;

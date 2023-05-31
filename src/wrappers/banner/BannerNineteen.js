@@ -79,7 +79,7 @@ const BannerNineteen = ({ spaceTopClass, spaceBottomClass }) => {
 
 BannerNineteen.propTypes = {
   spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string
+  spaceTopClass: PropTypes.string,
 };
 
 export default BannerNineteen;

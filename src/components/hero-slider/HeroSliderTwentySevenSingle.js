@@ -9,7 +9,7 @@ const HeroSliderTwentySevenSingle = ({ data, sliderClass }) => {
         sliderClass ? sliderClass : ""
       }`}
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL + data.image})`
+        backgroundImage: `url(${process.env.PUBLIC_URL + data.image})`,
       }}
     >
       <div className="container">
@@ -42,7 +42,7 @@ const HeroSliderTwentySevenSingle = ({ data, sliderClass }) => {
 
 HeroSliderTwentySevenSingle.propTypes = {
   data: PropTypes.object,
-  sliderClass: PropTypes.string
+  sliderClass: PropTypes.string,
 };
 
 export default HeroSliderTwentySevenSingle;

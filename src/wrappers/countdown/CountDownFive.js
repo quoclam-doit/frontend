@@ -9,7 +9,7 @@ const CountDownFive = ({
   spaceBottomClass,
   bgImg,
   image,
-  dateTime
+  dateTime,
 }) => {
   return (
     <div
@@ -53,7 +53,7 @@ CountDownFive.propTypes = {
   image: PropTypes.string,
   dateTime: PropTypes.string,
   spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string
+  spaceTopClass: PropTypes.string,
 };
 
 export default CountDownFive;

@@ -18,7 +18,7 @@ const BannerTwoSingle = ({ data, spaceBottomClass }) => {
 
 BannerTwoSingle.propTypes = {
   data: PropTypes.object,
-  spaceBottomClass: PropTypes.string
+  spaceBottomClass: PropTypes.string,
 };
 
 export default BannerTwoSingle;

@@ -80,7 +80,7 @@ const TabProductTwo = ({ spaceBottomClass, category }) => {
 
 TabProductTwo.propTypes = {
   category: PropTypes.string,
-  spaceBottomClass: PropTypes.string
+  spaceBottomClass: PropTypes.string,
 };
 
 export default TabProductTwo;

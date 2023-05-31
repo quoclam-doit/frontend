@@ -45,7 +45,7 @@ const BannerTwentyEight = ({ spaceTopClass, spaceBottomClass }) => {
 
 BannerTwentyEight.propTypes = {
   spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string
+  spaceTopClass: PropTypes.string,
 };
 
 export default BannerTwentyEight;

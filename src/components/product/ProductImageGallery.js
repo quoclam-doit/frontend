@@ -3,9 +3,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery";
 import Swiper from "react-id-swiper";
 
-
 const ProductImageGallery = ({ product }) => {
-  
   const [gallerySwiper, getGallerySwiper] = useState(null);
   const [thumbnailSwiper, getThumbnailSwiper] = useState(null);
 
@@ -28,7 +26,7 @@ const ProductImageGallery = ({ product }) => {
     spaceBetween: 10,
     loopedSlides: 4,
     loop: true,
-    effect: "fade"
+    effect: "fade",
   };
 
   const thumbnailSwiperParams = {
@@ -42,7 +40,7 @@ const ProductImageGallery = ({ product }) => {
     slideToClickedSlide: true,
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      prevEl: ".swiper-button-prev",
     },
     renderPrevButton: () => (
       <button className="swiper-button-prev ht-swiper-button-nav">
@@ -53,7 +51,7 @@ const ProductImageGallery = ({ product }) => {
       <button className="swiper-button-next ht-swiper-button-nav">
         <i className="pe-7s-angle-right" />
       </button>
-    )
+    ),
   };
 
   return (
@@ -121,7 +119,7 @@ const ProductImageGallery = ({ product }) => {
 };
 
 ProductImageGallery.propTypes = {
-  product: PropTypes.object
+  product: PropTypes.object,
 };
 
 export default ProductImageGallery;

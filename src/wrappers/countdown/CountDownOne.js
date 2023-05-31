@@ -37,7 +37,7 @@ CountDownOne.propTypes = {
   bgImg: PropTypes.string,
   dateTime: PropTypes.string,
   spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string
+  spaceTopClass: PropTypes.string,
 };
 
 export default CountDownOne;

@@ -40,7 +40,7 @@ const BlogFeaturedFiveSingle = ({ singlePost }) => {
 };
 
 BlogFeaturedFiveSingle.propTypes = {
-  singlePost: PropTypes.object
+  singlePost: PropTypes.object,
 };
 
 export default BlogFeaturedFiveSingle;

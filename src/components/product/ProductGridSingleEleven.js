@@ -17,7 +17,7 @@ const ProductGridSingleEleven = ({
   sliderClassName,
   spaceBottomClass,
   colorClass,
-  productGridStyleClass
+  productGridStyleClass,
 }) => {
   const [modalShow, setModalShow] = useState(false);
   const { addToast } = useToasts();
@@ -195,7 +195,7 @@ ProductGridSingleEleven.propTypes = {
   sliderClassName: PropTypes.string,
   spaceBottomClass: PropTypes.string,
   colorClass: PropTypes.string,
-  wishlistItem: PropTypes.object
+  wishlistItem: PropTypes.object,
 };
 
 export default ProductGridSingleEleven;

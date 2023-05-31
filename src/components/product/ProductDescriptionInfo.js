@@ -7,13 +7,10 @@ import { addToCart } from "../../redux/actions/cartActions";
 import { addToWishlist } from "../../redux/actions/wishlistActions";
 import { addToCompare } from "../../redux/actions/compareActions";
 import Rating from "./sub-components/ProductRating";
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
 import { NativeSelect, Select } from "@mui/material";
-
-
-
 
 const ProductDescriptionInfo = ({
   product,
@@ -27,7 +24,7 @@ const ProductDescriptionInfo = ({
   addToast,
   addToCart,
   addToWishlist,
-  addToCompare
+  addToCompare,
 }) => {
   const [selectedProductColor, setSelectedProductColor] = useState(
     product.variation ? product.variation[0].color : ""
@@ -46,7 +43,7 @@ const ProductDescriptionInfo = ({
     selectedProductColor,
     selectedProductSize
   );
-  const [company, setCompany] = React.useState('');
+  const [company, setCompany] = React.useState("");
 
   const handleChange = (event) => {
     setCompany(event.target.value);
@@ -112,7 +109,7 @@ const ProductDescriptionInfo = ({
             </div>
           </div>
           <div>
-            <FormControl style={{ width: '300px', marginLeft: '30px' }}>
+            <FormControl style={{ width: "300px", marginLeft: "30px" }}>
               <InputLabel id="demo-simple-select-label">Company</InputLabel>
               <Select
                 defaultValue={10}
@@ -123,13 +120,14 @@ const ProductDescriptionInfo = ({
                 onChange={handleChange}
               >
                 <MenuItem value={10}>Company 1</MenuItem>
-                <MenuItem disabled value={20}>Company 2</MenuItem>
+                <MenuItem disabled value={20}>
+                  Company 2
+                </MenuItem>
                 <MenuItem value={30}>Company 3</MenuItem>
               </Select>
             </FormControl>
           </div>
         </div>
-
       ) : (
         ""
       )}
@@ -294,10 +292,10 @@ ProductDescriptionInfo.propTypes = {
   finalDiscountedPrice: PropTypes.number,
   finalProductPrice: PropTypes.number,
   product: PropTypes.object,
-  wishlistItem: PropTypes.object
+  wishlistItem: PropTypes.object,
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
     addToCart: (
       item,
@@ -321,7 +319,7 @@ const mapDispatchToProps = dispatch => {
     },
     addToCompare: (item, addToast) => {
       dispatch(addToCompare(item, addToast));
-    }
+    },
   };
 };
 

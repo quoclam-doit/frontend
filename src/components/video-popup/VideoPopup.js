@@ -26,7 +26,7 @@ const VideoPopup = ({ spaceBottomClass }) => {
                 Providing the best event equipment
               </h2>
               <p className="text mb-30">
-              Bringing the optimal choice of price and product quality.
+                Bringing the optimal choice of price and product quality.
               </p>
               <div className="link mb-30">
                 <Link to={process.env.PUBLIC_URL + "/about"}>
@@ -51,7 +51,7 @@ const VideoPopup = ({ spaceBottomClass }) => {
 };
 
 VideoPopup.propTypes = {
-  spaceBottomClass: PropTypes.string
+  spaceBottomClass: PropTypes.string,
 };
 
 export default VideoPopup;

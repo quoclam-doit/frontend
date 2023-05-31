@@ -62,7 +62,7 @@ const NotFound = ({ location }) => {
 };
 
 NotFound.propTypes = {
-  location: PropTypes.object
+  location: PropTypes.object,
 };
 
 export default NotFound;

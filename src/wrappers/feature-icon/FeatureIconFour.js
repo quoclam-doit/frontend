@@ -9,7 +9,7 @@ const FeatureIconFour = ({
   containerClass,
   gutterClass,
   responsiveClass,
-  bgImg
+  bgImg,
 }) => {
   return (
     <div
@@ -52,7 +52,7 @@ FeatureIconFour.propTypes = {
   gutterClass: PropTypes.string,
   responsiveClass: PropTypes.string,
   spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string
+  spaceTopClass: PropTypes.string,
 };
 
 export default FeatureIconFour;

@@ -8,7 +8,7 @@ import FooterNewsletter from "../../components/footer/FooterNewsletter";
 const FooterThree = ({
   backgroundColorClass,
   spaceTopClass,
-  spaceBottomClass
+  spaceBottomClass,
 }) => {
   const [scroll, setScroll] = useState(0);
   const [top, setTop] = useState(0);
@@ -173,7 +173,7 @@ const FooterThree = ({
 FooterThree.propTypes = {
   backgroundColorClass: PropTypes.string,
   spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string
+  spaceTopClass: PropTypes.string,
 };
 
 export default FooterThree;

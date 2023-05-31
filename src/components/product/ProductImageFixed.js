@@ -33,7 +33,7 @@ const ProductImageFixed = ({ product }) => {
 };
 
 ProductImageFixed.propTypes = {
-  product: PropTypes.object
+  product: PropTypes.object,
 };
 
 export default ProductImageFixed;

@@ -17,7 +17,7 @@ const ProductGridSingleEight = ({
   compareItem,
   sliderClassName,
   spaceBottomClass,
-  colorClass
+  colorClass,
 }) => {
   const [modalShow, setModalShow] = useState(false);
   const { addToast } = useToasts();
@@ -41,7 +41,9 @@ const ProductGridSingleEight = ({
           } ${colorClass ? colorClass : ""}`}
         >
           <div className="product-img">
-            <Link to={process.env.PUBLIC_URL + "/product-tab-left/" + product.id}>
+            <Link
+              to={process.env.PUBLIC_URL + "/product-tab-left/" + product.id}
+            >
               <img
                 className="default-img img-fluid"
                 src={process.env.PUBLIC_URL + product.image[0]}
@@ -63,7 +65,9 @@ const ProductGridSingleEight = ({
           </div>
           <div className="product-content">
             <h3>
-              <Link to={process.env.PUBLIC_URL + "/product-tab-left/" + product.id}>
+              <Link
+                to={process.env.PUBLIC_URL + "/product-tab-left/" + product.id}
+              >
                 {product.name}
               </Link>
             </h3>
@@ -192,7 +196,7 @@ ProductGridSingleEight.propTypes = {
   sliderClassName: PropTypes.string,
   spaceBottomClass: PropTypes.string,
   colorClass: PropTypes.string,
-  wishlistItem: PropTypes.object
+  wishlistItem: PropTypes.object,
 };
 
 export default ProductGridSingleEight;

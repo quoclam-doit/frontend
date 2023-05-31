@@ -45,7 +45,7 @@ const CountDownTwo = ({ spaceTopClass, spaceBottomClass, dateTime }) => {
 CountDownTwo.propTypes = {
   dateTime: PropTypes.string,
   spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string
+  spaceTopClass: PropTypes.string,
 };
 
 export default CountDownTwo;

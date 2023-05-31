@@ -48,28 +48,30 @@ const OrderHistory = ({ location }) => {
                     </thead>
                     <tbody>
                       {History.map((history, key) => (
-                        <tr key={history.id} >
+                        <tr key={history.id}>
                           <td className="product-thumbnail">{history.code}</td>
                           <td>
-                            <img className="img-fluid" src={history.image} alt={history.color} />
+                            <img
+                              className="img-fluid"
+                              src={history.image}
+                              alt={history.color}
+                            />
                           </td>
-                          <td className="product-name" ><a>{history.name}</a>
+                          <td className="product-name">
+                            <a>{history.name}</a>
                             <div className="cart-item-variation">
-                              <span>
-                                Màu: {history.color}
-                              </span>
-                              <span>
-                                Số lượng: {history.quantity}
-                              </span>
-                              <span>
-                                Giá đơn: ${history.price}
-                              </span>
+                              <span>Màu: {history.color}</span>
+                              <span>Số lượng: {history.quantity}</span>
+                              <span>Giá đơn: ${history.price}</span>
                             </div>
                           </td>
-                          <td className="product-name text-center">{history.company}</td>
-                          <td>{history.date}
+                          <td className="product-name text-center">
+                            {history.company}
                           </td>
-                          <td className="product-price-cart">${history.price*history.quantity}</td>
+                          <td>{history.date}</td>
+                          <td className="product-price-cart">
+                            ${history.price * history.quantity}
+                          </td>
                           <td>{history.status}</td>
                         </tr>
                       ))}
@@ -86,7 +88,7 @@ const OrderHistory = ({ location }) => {
 };
 
 OrderHistory.propTypes = {
-  location: PropTypes.object
+  location: PropTypes.object,
 };
 
 export default OrderHistory;

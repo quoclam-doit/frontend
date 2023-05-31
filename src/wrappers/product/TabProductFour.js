@@ -85,7 +85,7 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
 
 TabProductFour.propTypes = {
   category: PropTypes.string,
-  spaceBottomClass: PropTypes.string
+  spaceBottomClass: PropTypes.string,
 };
 
 export default TabProductFour;

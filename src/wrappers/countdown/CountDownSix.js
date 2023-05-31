@@ -8,7 +8,7 @@ const CountDownSix = ({
   spaceTopClass,
   spaceBottomClass,
   dateTime,
-  countDownImage
+  countDownImage,
 }) => {
   return (
     <div
@@ -58,7 +58,7 @@ CountDownSix.propTypes = {
   countDownImage: PropTypes.string,
   dateTime: PropTypes.string,
   spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string
+  spaceTopClass: PropTypes.string,
 };
 
 export default CountDownSix;

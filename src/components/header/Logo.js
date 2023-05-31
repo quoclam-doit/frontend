@@ -14,7 +14,7 @@ const Logo = ({ imageUrl, logoClass }) => {
 
 Logo.propTypes = {
   imageUrl: PropTypes.string,
-  logoClass: PropTypes.string
+  logoClass: PropTypes.string,
 };
 
 export default Logo;
