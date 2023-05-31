@@ -19,5 +19,12 @@
     "subtitle": "Final Sale For <br /> 2023",
     "image": "/assets/img/slider/3.jpg",
     "url": "/shop-grid-standard"
+  },
+  {
+    "id": 4,
+    "title": "Best Products Collection",
+    "subtitle": "Final Sale For <br /> 2023",
+    "image": "/assets/img/slider/slider-30.jpg",
+    "url": "/shop-grid-standard"
   }
 ]
