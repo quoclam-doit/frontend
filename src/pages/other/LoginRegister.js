@@ -58,7 +58,7 @@ const LoginRegister = ({ location }) => {
                               <input
                                 type="password"
                                 name="user-password"
-                                placeholder="Password"
+                                placeholder="Password"  
                               />
                               <div className="button-box">
                                 <div className="login-toggle-btn">

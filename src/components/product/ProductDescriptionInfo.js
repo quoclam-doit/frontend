@@ -8,6 +8,10 @@ import { addToWishlist } from "../../redux/actions/wishlistActions";
 import { addToCompare } from "../../redux/actions/compareActions";
 import Rating from "./sub-components/ProductRating";
 
+
+
+
+
 const ProductDescriptionInfo = ({
   product,
   discountedPrice,
@@ -39,6 +43,11 @@ const ProductDescriptionInfo = ({
     selectedProductColor,
     selectedProductSize
   );
+  const [company, setCompany] = React.useState('');
+
+  const handleChange = (event) => {
+    setCompany(event.target.value);
+  };
 
   return (
     <div className="product-details-content ml-70">
@@ -101,6 +110,7 @@ const ProductDescriptionInfo = ({
           </div>
           
         </div>
+
       ) : (
         ""
       )}
@@ -241,7 +251,7 @@ const ProductDescriptionInfo = ({
               <i className="fa fa-facebook" />
             </a>
           </li>
-          
+
           <li>
             <a href="//linkedin.com">
               <i className="fa fa-instagram" />

@@ -2480,13 +2480,13 @@
   }
   h3 {
     font-family: $josefin;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 1;
 
     margin: 0;
 
-    color: #fff;
+    color: #ff0000;
   }
   h1 {
     font-family: $josefin;
@@ -2498,7 +2498,7 @@
 
     letter-spacing: -0.2px;
 
-    color: #fff;
+    color: #313131;
     @media #{$lg-layout} {
       font-size: 52px;
       line-height: 62px;

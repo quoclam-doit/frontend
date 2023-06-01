@@ -34,17 +34,17 @@ const NavMenu = ({ strings, menuWhiteClass, sidebarMenu }) => {
             </Link>
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/"}>
-              {strings["pages"]}
-              {sidebarMenu ? (
+            <Link to={process.env.PUBLIC_URL + "/about"}>
+            {strings["about_us"]}
+              {/* {sidebarMenu ? (
                 <span>
                   <i className="fa fa-angle-right"></i>
                 </span>
               ) : (
                 <i className="fa fa-angle-down" />
-              )}
+              )} */}
             </Link>
-            <ul className="submenu">
+            {/* <ul className="submenu">
               <li>
                 <Link to={process.env.PUBLIC_URL + "/cart"}>
                   {strings["cart"]}
@@ -90,9 +90,8 @@ const NavMenu = ({ strings, menuWhiteClass, sidebarMenu }) => {
                   {strings["404_page"]}
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </li>
-
           <li>
             <Link to={process.env.PUBLIC_URL + "/contact"}>
               {strings["contact_us"]}

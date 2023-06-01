@@ -122,9 +122,7 @@ const Cart = ({
                                       <span>
                                         Color: {cartItem.selectedProductColor}
                                       </span>
-                                      <span>
-                                        Size: {cartItem.selectedProductSize}
-                                      </span>
+                                      
                                     </div>
                                   ) : (
                                     ""

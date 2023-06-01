@@ -38,8 +38,7 @@ const Contact = ({ location }) => {
                       <i className="fa fa-phone" />
                     </div>
                     <div className="contact-info-dec">
-                      <p>+084 913 740 946</p>
-                      <p>+084 835 144 620</p>
+                      <p>0528687148</p>
                     </div>
                   </div>
                   <div className="single-contact-info">
@@ -48,13 +47,13 @@ const Contact = ({ location }) => {
                     </div>
                     <div className="contact-info-dec">
                       <p>
-                        <a href="mailto:partypals@gmail.com">
-                          partypals@gmail.com
+                        <a href="mailto:partypal.info@gmail.com">
+                        partypal.info@gmail.com
                         </a>
                       </p>
                       <p>
-                        <a href="partypals.com.vn">
-                          partypals.com.vn
+                        <a href="https://partypals.vercel.app/">
+                        https://partypals.vercel.app/
                         </a>
                       </p>
                     </div>
@@ -72,12 +71,12 @@ const Contact = ({ location }) => {
                     <h3>Follow Us</h3>
                     <ul>
                       <li>
-                        <a href="//facebook.com">
+                        <a href="https://www.facebook.com/profile.php?id=100093236194785">
                           <i className="fa fa-facebook" />
                         </a>
                       </li>
                       <li>
-                        <a href="//facebook.com">
+                        <a href="https://www.facebook.com/profile.php?id=100093236194785">
                           <i className="fa fa-instagram" />
                         </a>
                       </li>
