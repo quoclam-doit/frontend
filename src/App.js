@@ -10,17 +10,14 @@ import { BreadcrumbsProvider } from "react-breadcrumbs-dynamic";
 // home pages
 const HomeFashionEight = lazy(() => import("./pages/home/HomeFashionEight"));
 
-
 // shop pages
 const ShopGridStandard = lazy(() => import("./pages/shop/ShopGridStandard"));
 const ShopGridFilter = lazy(() => import("./pages/shop/ShopGridFilter"));
-
 
 // product pages
 const ProductTabLeft = lazy(() =>
   import("./pages/shop-product/ProductTabLeft")
 );
-
 
 // other pages
 const About = lazy(() => import("./pages/other/About"));
@@ -42,11 +39,17 @@ const App = (props) => {
         languages: {
           en: require("./translations/english.json"),
           fn: require("./translations/french.json"),
-          de: require("./translations/germany.json")
-        }
+          de: require("./translations/germany.json"),
+        },
       })
     );
   });
+
+  useEffect(() => {
+    window.process = {
+      ...window.process,
+    };
+  }, []);
 
   return (
     <ToastProvider placement="bottom-left">
@@ -76,8 +79,6 @@ const App = (props) => {
                   component={HomeFashionEight}
                 />
 
-                
-
                 {/* Shop pages */}
                 <Route
                   path={process.env.PUBLIC_URL + "/shop-grid-standard"}
@@ -87,15 +88,13 @@ const App = (props) => {
                   path={process.env.PUBLIC_URL + "/shop-grid-filter"}
                   component={ShopGridFilter}
                 />
-                
 
                 {/* Shop product pages */}
-                
+
                 <Route
                   path={process.env.PUBLIC_URL + "/product-tab-left/:id"}
                   component={ProductTabLeft}
                 />
-                
 
                 {/* Other pages */}
                 <Route
@@ -148,7 +147,7 @@ const App = (props) => {
 };
 
 App.propTypes = {
-  dispatch: PropTypes.func
+  dispatch: PropTypes.func,
 };
 
 export default connect()(multilanguage(App));
