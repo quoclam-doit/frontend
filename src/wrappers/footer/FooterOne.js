@@ -69,12 +69,12 @@ const FooterOne = ({
               <div className="footer-list">
                 <ul>
                   <li>
-                    <Link to={process.env.PUBLIC_URL + "/about"}>About us</Link>
+                    <Link to={process.env.PUBLIC_URL + "/about"}>About Us</Link>
                   </li>
                   
                   <li>
                     <Link to={process.env.PUBLIC_URL + "/contact"}>
-                      Contact
+                      Contact Us
                     </Link>
                   </li>
                   
@@ -125,7 +125,7 @@ const FooterOne = ({
                 <ul>
                   <li>
                     <a
-                      href="//www.facebook.com"
+                      href="https://www.facebook.com/partypals.info"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -135,7 +135,7 @@ const FooterOne = ({
                   
                   <li>
                     <a
-                      href="//www.instagram.com"
+                      href="https://www.instagram.com/partypals.info/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

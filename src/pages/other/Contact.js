@@ -71,12 +71,12 @@ const Contact = ({ location }) => {
                     <h3>Follow Us</h3>
                     <ul>
                       <li>
-                        <a href="https://www.facebook.com/profile.php?id=100093236194785">
+                        <a href="https://www.facebook.com/partypals.info">
                           <i className="fa fa-facebook" />
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.facebook.com/profile.php?id=100093236194785">
+                        <a href="https://www.instagram.com/partypals.info/">
                           <i className="fa fa-instagram" />
                         </a>
                       </li>

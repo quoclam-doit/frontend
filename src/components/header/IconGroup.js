@@ -45,7 +45,7 @@ const IconGroup = ({
           style={{ marginLeft: '-100px', zIndex:'220'}}
           data={[
             {
-              image: 'https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/322484761_723859952382239_4232805868826205914_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=95FsfLNOT3YAX92OGcH&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfCg8kxpDO1fAQOSTxagfatmMAw0L6HeE5y8LzbYbWl1cg&oe=64737D12',
+              image: 'https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/322484761_723859952382239_4232805868826205914_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fP7VDqWloPIAX-dYw6y&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfDSqCDxlN51n_X3Au87HcF8c8eaztIrNWX6bHMuk3_FDg&oe=64854952',
               message: (
                 <p>
                   Tuấn Anh Trần had shared a{' '}
@@ -55,7 +55,7 @@ const IconGroup = ({
               detailPage: '/',
             },
             {
-              image: 'https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/322484761_723859952382239_4232805868826205914_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=95FsfLNOT3YAX92OGcH&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfCg8kxpDO1fAQOSTxagfatmMAw0L6HeE5y8LzbYbWl1cg&oe=64737D12',
+              image: 'https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/322484761_723859952382239_4232805868826205914_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fP7VDqWloPIAX-dYw6y&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfDSqCDxlN51n_X3Au87HcF8c8eaztIrNWX6bHMuk3_FDg&oe=64854952',
               message: (
                 <p>
                   Tuấn Anh Trần had shared a{' '}

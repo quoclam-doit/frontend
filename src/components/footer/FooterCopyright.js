@@ -17,7 +17,7 @@ const FooterCopyright = ({ footerLogo, spaceBottomClass, colorClass }) => {
       <p>
         &copy; {new Date().getFullYear()}{" "}
         <a
-          href="https://hasthemes.com"
+          href="https://"
           rel="noopener noreferrer"
           target="_blank"
         >

@@ -37,13 +37,13 @@ const OrderHistory = ({ location }) => {
                   <table>
                     <thead>
                       <tr>
-                        <th>Mã đơn hàng</th>
-                        <th>Hình ảnh</th>
-                        <th>sản phẩm</th>
-                        <th>Công ty</th>
-                        <th>Ngày đặt</th>
-                        <th>Tổng Giá</th>
-                        <th>Trạng thái</th>
+                        <th>Code</th>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Company</th>
+                        <th>Order Date</th>
+                        <th>Total</th>
+                        <th>Status</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -56,13 +56,13 @@ const OrderHistory = ({ location }) => {
                           <td className="product-name" ><a>{history.name}</a>
                             <div className="cart-item-variation">
                               <span>
-                                Màu: {history.color}
+                                Color: {history.color}
                               </span>
                               <span>
-                                Số lượng: {history.quantity}
+                                Qty: {history.quantity}
                               </span>
                               <span>
-                                Giá đơn: ${history.price}
+                                Price: ${history.price}
                               </span>
                             </div>
                           </td>

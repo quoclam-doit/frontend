@@ -121,7 +121,7 @@ const OrderDetail = ({ location }) => {
                                                     />
                                                     <MDBRow className="align-items-center">
                                                         <MDBCol md="2">
-                                                            <a className="text-muted mb-0 small">Ghi chú : </a>
+                                                            <a className="text-muted mb-0 small">Note : </a>
                                                         </MDBCol>
                                                         <MDBCol md="10">
                                                             <div className="d-flex justify-content mb-1">
@@ -184,7 +184,7 @@ const OrderDetail = ({ location }) => {
                                                     />
                                                     <MDBRow className="align-items-center">
                                                         <MDBCol md="2">
-                                                            <p className="text-muted mb-0 small">Ghi chú :</p>
+                                                            <p className="text-muted mb-0 small">Note :</p>
                                                         </MDBCol>
 
                                                     </MDBRow>
