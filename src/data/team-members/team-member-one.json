@@ -19,39 +19,39 @@
   },
   {
     "id": "3",
-    "image": "/assets/img/team/4.jpg",
-    "fbLink": "https://www.facebook.com/partypals.info",
-    "twitterLink": "//www.twitter.com",
-    "instagramLink": "https://www.instagram.com/partypals.info/",
-    "name": "Phạm Hữu Phúc",
-    "position": "Director"
-  },
-  {
-    "id": "4",
-    "image": "/assets/img/team/3.jpg",
-    "fbLink": "https://www.facebook.com/partypals.info",
-    "twitterLink": "//www.twitter.com",
-    "instagramLink": "https://www.instagram.com/partypals.info/",
-    "name": "Lê Thái Bảo Toàn",
-    "position": "Developer"
-  },
-  {
-    "id": "5",
-    "image": "/assets/img/team/5.jpg",
-    "fbLink": "https://www.facebook.com/partypals.info",
-    "twitterLink": "//www.twitter.com",
-    "instagramLink": "https://www.instagram.com/partypals.info/",
-    "name": "Trương Thị Thủy Tiên",
-    "position": "CHRO"
-  },
-  {
-    "id": "6",
     "image": "/assets/img/team/6.jpg",
     "fbLink": "https://www.facebook.com/partypals.info",
     "twitterLink": "//www.twitter.com",
     "instagramLink": "https://www.instagram.com/partypals.info/",
     "name": "Phạm Thị Ánh Linh",
-    "position": "Designer"
+    "position": "CMO"
+  },
+  {
+    "id": "4",
+    "image": "/assets/img/team/5.jpg",
+    "fbLink": "https://www.facebook.com/partypals.info",
+    "twitterLink": "//www.twitter.com",
+    "instagramLink": "https://www.instagram.com/partypals.info/",
+    "name": "Trương Thị Thủy Tiên",
+    "position": "CCO"
+  },
+  {
+    "id": "5",
+    "image": "/assets/img/team/3.jpg",
+    "fbLink": "https://www.facebook.com/partypals.info",
+    "twitterLink": "//www.twitter.com",
+    "instagramLink": "https://www.instagram.com/partypals.info/",
+    "name": "Lê Thái Bảo Toàn",
+    "position": "CTO"
+  },
+  {
+    "id": "6",
+    "image": "/assets/img/team/4.jpg",
+    "fbLink": "https://www.facebook.com/partypals.info",
+    "twitterLink": "//www.twitter.com",
+    "instagramLink": "https://www.instagram.com/partypals.info/",
+    "name": "Phạm Hữu Phúc",
+    "position": "COO"
   },
   {
     "id": "7",
@@ -60,7 +60,7 @@
     "twitterLink": "//www.twitter.com",
     "instagramLink": "https://www.instagram.com/partypals.info/",
     "name": "Trịnh Bình Minh",
-    "position": "Developer"
+    "position": "COO"
   },
   {
     "id": "8",
@@ -69,6 +69,6 @@
     "twitterLink": "//www.twitter.com",
     "instagramLink": "https://www.instagram.com/partypals.info/",
     "name": "Lê Võ Anh Duy",
-    "position": "Developer"
+    "position": "COO"
   }
 ]
