@@ -14,7 +14,7 @@ const LoginRegister = ({ location }) => {
   return (
     <Fragment>
       <MetaTags>
-        <title>PartyPaLs | Login</title>
+        <title>PartyPaLs | Đăng nhập</title>
         <meta
           name="description"
           content="Compare page of flone react minimalist eCommerce template."
@@ -22,7 +22,7 @@ const LoginRegister = ({ location }) => {
       </MetaTags>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + pathname}>
-        Login Register
+        Đăng Nhập - Đăng Kí
       </BreadcrumbsItem>
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
@@ -36,12 +36,12 @@ const LoginRegister = ({ location }) => {
                     <Nav variant="pills" className="login-register-tab-list">
                       <Nav.Item>
                         <Nav.Link eventKey="login">
-                          <h4>Login</h4>
+                          <h4>Đăng nhập</h4>
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="register">
-                          <h4>Register</h4>
+                          <h4>Đăng kí</h4>
                         </Nav.Link>
                       </Nav.Item>
                     </Nav>
@@ -53,23 +53,23 @@ const LoginRegister = ({ location }) => {
                               <input
                                 type="text"
                                 name="user-name"
-                                placeholder="Username"
+                                placeholder="Tên đăng nhập"
                               />
                               <input
                                 type="password"
                                 name="user-password"
-                                placeholder="Password"  
+                                placeholder="Mật khẩu"  
                               />
                               <div className="button-box">
                                 <div className="login-toggle-btn">
                                   <input type="checkbox" />
-                                  <label className="ml-10">Remember me</label>
+                                  <label className="ml-10">Nhớ mật khẩu</label>
                                   <Link to={process.env.PUBLIC_URL + "/"}>
-                                    Forgot Password?
+                                    Quên mật khẩu?
                                   </Link>
                                 </div>
                                 <button type="submit">
-                                  <span>Login</span>
+                                  <span>Đăng nhập</span>
                                 </button>
                               </div>
                             </form>
@@ -83,12 +83,12 @@ const LoginRegister = ({ location }) => {
                               <input
                                 type="text"
                                 name="user-name"
-                                placeholder="Username"
+                                placeholder="Tên đăng nhập"
                               />
                               <input
                                 type="password"
                                 name="user-password"
-                                placeholder="Password"
+                                placeholder="Mật khẩu"
                               />
                               <input
                                 name="user-email"
@@ -97,7 +97,7 @@ const LoginRegister = ({ location }) => {
                               />
                               <div className="button-box">
                                 <button type="submit">
-                                  <span>Register</span>
+                                  <span>Đăng kí</span>
                                 </button>
                               </div>
                             </form>

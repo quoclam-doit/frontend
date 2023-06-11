@@ -15,7 +15,7 @@ const OrderHistory = ({ location }) => {
   return (
     <Fragment>
       <MetaTags>
-        <title>PartyPaLs | History</title>
+        <title>PartyPaLs | Lịch sử</title>
         <meta
           name="description"
           content="Compare page of flone react minimalist eCommerce template."
@@ -23,27 +23,27 @@ const OrderHistory = ({ location }) => {
       </MetaTags>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + pathname}>
-        History
+        Lịch Sử Đơn Hàng
       </BreadcrumbsItem>
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
         <Breadcrumb />
         <div className="cart-main-area pt-90 pb-100">
           <div className="container">
-            <h3 className="cart-page-title">Order History</h3>
+            <h3 className="cart-page-title">LỊCH SỬ ĐƠN HÀNG</h3>
             <div className="row">
               <div className="col-12">
                 <div className="table-content table-responsive cart-table-content">
                   <table>
                     <thead>
                       <tr>
-                        <th>Code</th>
-                        <th>Image</th>
-                        <th>Product</th>
-                        <th>Company</th>
-                        <th>Order Date</th>
-                        <th>Total</th>
-                        <th>Status</th>
+                        <th>Mã đơn</th>
+                        <th>Hình ảnh</th>
+                        <th>Sản phẩm</th>
+                        <th>Công ty</th>
+                        <th>Ngày đặt</th>
+                        <th>Tổng cộng</th>
+                        <th>Trạng thái</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -56,20 +56,20 @@ const OrderHistory = ({ location }) => {
                           <td className="product-name" ><a>{history.name}</a>
                             <div className="cart-item-variation">
                               <span>
-                                Color: {history.color}
+                                Màu: {history.color}
                               </span>
                               <span>
-                                Qty: {history.quantity}
+                                Số lượng: {history.quantity}
                               </span>
                               <span>
-                                Price: ${history.price}
+                                Đơn giá: {history.price} VNĐ
                               </span>
                             </div>
                           </td>
                           <td className="product-name text-center">{history.company}</td>
                           <td>{history.date}
                           </td>
-                          <td className="product-price-cart">${history.price*history.quantity}</td>
+                          <td className="product-price-cart">{history.price*history.quantity} VNĐ</td>
                           <td>{history.status}</td>
                         </tr>
                       ))}

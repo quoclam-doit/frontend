@@ -13,7 +13,7 @@ const SectionTitleWithText = ({ spaceTopClass, spaceBottomClass }) => {
           <h5>Who Are We</h5>
           <h1>Welcome To PartyPals</h1>
           <p>
-            We are an intermediary company specializing in the supply of event equipment and always want to bring quality, prestige and satisfaction to customers. Thank you!{" "}
+            Chúng tôi là công ty trung gian chuyên cung cấp thiết bị sự kiện luôn mong muốn mang đến chất lượng, uy tín và sự hài lòng cho khách hàng. Cảm ơn!{" "}
           </p>
         </div>
       </div>

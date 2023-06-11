@@ -66,7 +66,7 @@ const IconGroup = ({
             },
           ]}
           header={{
-            title: 'Notifications',
+            title: 'Thông báo',
             option: { text: 'View All', onClick: () => console.log('Clicked') },
           }}
           className="okrjoy"
@@ -83,21 +83,21 @@ const IconGroup = ({
         <div className="account-dropdown">
           <ul>
             <li>
-              <Link to={process.env.PUBLIC_URL + "/login-register"}>Login</Link>
+              <Link to={process.env.PUBLIC_URL + "/login-register"}>Đăng nhập</Link>
             </li>
             <li>
               <Link to={process.env.PUBLIC_URL + "/my-account"}>
-                My account
+                Tài khoản
               </Link>
             </li>
             <li>
               <Link to={process.env.PUBLIC_URL + "/order-history"}>
-                History
+                Lịch sử
               </Link>
             </li>
             <li>
               <Link to={process.env.PUBLIC_URL + "/order-detail"}>
-                Order Detail
+                Đơn hàng
               </Link>
             </li>
           </ul>

@@ -8,6 +8,7 @@ import { connect } from "react-redux";
 import { BreadcrumbsProvider } from "react-breadcrumbs-dynamic";
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import OrderDetail from "./pages/other/OrderDetail";
+import Faq from "./pages/other/Faq";
 
 // home pages
 const HomeFashionEight = lazy(() => import("./pages/home/HomeFashionEight"));
@@ -114,6 +115,14 @@ const App = (props) => {
                 <Route
                   path={process.env.PUBLIC_URL + "/contact"}
                   component={Contact}
+                />
+                <Route
+                  path={process.env.PUBLIC_URL + "/contact"}
+                  component={Contact}
+                />
+                <Route
+                  path={process.env.PUBLIC_URL + "/Faq"}
+                  component={Faq}
                 />
                 <Route
                   path={process.env.PUBLIC_URL + "/my-account"}

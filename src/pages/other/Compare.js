@@ -26,7 +26,7 @@ const Compare = ({
   return (
     <Fragment>
       <MetaTags>
-        <title>PartyPaLs | Compare</title>
+        <title>PartyPaLs | So sánh</title>
         <meta
           name="description"
           content="Compare page of flone react minimalist eCommerce template."
@@ -34,7 +34,7 @@ const Compare = ({
       </MetaTags>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + pathname}>
-        Compare
+        So sánh
       </BreadcrumbsItem>
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
@@ -165,18 +165,18 @@ const Compare = ({
                                   {discountedPrice !== null ? (
                                     <Fragment>
                                       <span className="amount old">
-                                        {currency.currencySymbol +
-                                          finalProductPrice}
+                                        {
+                                          finalProductPrice + " VNĐ"}
                                       </span>
                                       <span className="amount">
-                                        {currency.currencySymbol +
-                                          finalDiscountedPrice}
+                                        {
+                                          finalDiscountedPrice + " VNĐ"}
                                       </span>
                                     </Fragment>
                                   ) : (
                                     <span className="amount">
-                                      {currency.currencySymbol +
-                                        finalProductPrice}
+                                      {
+                                        finalProductPrice + " VNĐ"}
                                     </span>
                                   )}
                                 </td>
@@ -223,9 +223,9 @@ const Compare = ({
                       <i className="pe-7s-shuffle"></i>
                     </div>
                     <div className="item-empty-area__text">
-                      No items found in compare <br />{" "}
+                      Không tìm thấy mục nào trong so sánh <br />{" "}
                       <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
-                        Add Items
+                        Thêm Sản Phẩm
                       </Link>
                     </div>
                   </div>

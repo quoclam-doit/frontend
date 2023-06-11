@@ -37,7 +37,7 @@ const BrandLogoSliderThree = ({ spaceBottomClass, spaceTopClass }) => {
     >
       <div className="container">
         <SectionTitleSeven
-          titleText="Our Clients"
+          titleText="Đối tác của chúng tôi"
           positionClass="text-center"
           spaceClass="mb-50"
           borderClass="no-border"

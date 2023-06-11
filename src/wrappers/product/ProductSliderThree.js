@@ -33,8 +33,8 @@ const ProductSliderThree = ({ spaceBottomClass, category, colorClass }) => {
     >
       <div className="container">
         <SectionTitleSeven
-          titleText="Our Products"
-          subtitleText="Some of our company's products are being discounted and you can refer."
+          titleText="Sản phẩm của chúng tôi"
+          subtitleText="Một số sản phẩm của công ty chúng tôi đang được giảm giá bạn có thể tham khảo."
           positionClass="text-center"
           spaceClass="mb-55"
           borderClass="no-border"

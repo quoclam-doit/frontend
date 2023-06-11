@@ -21,7 +21,7 @@ const ShopTopFilter = ({ products, getSortParams }) => {
           {/* Product Filter */}
           <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
             <div className="product-filter">
-              <h5>Categories</h5>
+              <h5>Thể loại</h5>
               {uniqueCategories ? (
                 <ul>
                   {uniqueCategories.map((category, key) => {
@@ -48,7 +48,7 @@ const ShopTopFilter = ({ products, getSortParams }) => {
           {/* Product Filter */}
           <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
             <div className="product-filter">
-              <h5>Color</h5>
+              <h5>Màu</h5>
               {uniqueColors ? (
                 <ul>
                   {uniqueColors.map((color, key) => {
@@ -72,36 +72,11 @@ const ShopTopFilter = ({ products, getSortParams }) => {
             </div>
           </div>
           {/* Product Filter */}
-          <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
-            <div className="product-filter">
-              <h5>Size</h5>
-              {uniqueSizes ? (
-                <ul>
-                  {uniqueSizes.map((size, key) => {
-                    return (
-                      <li key={key}>
-                        <button
-                          className="text-uppercase"
-                          onClick={e => {
-                            getSortParams("size", size);
-                            setActiveSort(e);
-                          }}
-                        >
-                          {size}
-                        </button>
-                      </li>
-                    );
-                  })}
-                </ul>
-              ) : (
-                "No sizes found"
-              )}
-            </div>
-          </div>
+          
           {/* Product Filter */}
           <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
             <div className="product-filter product-filter--tag">
-              <h5>Tag</h5>
+              <h5>Nhãn</h5>
               {uniqueTags ? (
                 <ul>
                   {uniqueTags.map((tag, key) => {

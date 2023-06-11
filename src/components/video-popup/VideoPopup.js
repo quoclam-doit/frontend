@@ -23,20 +23,20 @@ const VideoPopup = ({ spaceBottomClass }) => {
           <div className="col-lg-6">
             <div className="video-popup__content">
               <h2 className="title mb-30">
-                Providing the best event equipment
+                Cung cấp thiết bị sự kiện tốt nhất
               </h2>
               <p className="text mb-30">
-              Bringing the optimal choice of price and product quality.
+              Mang đến sự lựa chọn tối ưu về giá cả và chất lượng sản phẩm.
               </p>
               <div className="link mb-30">
                 <Link to={process.env.PUBLIC_URL + "/about"}>
-                  More About Us
+                  Về Chúng Tôi
                 </Link>
               </div>
               <ModalVideo
                 channel="youtube"
                 isOpen={modalStatus}
-                videoId="feOScd2HdiU"
+                videoId=""
                 onClose={() => isOpen(false)}
               />
               <button onClick={() => isOpen(true)}>

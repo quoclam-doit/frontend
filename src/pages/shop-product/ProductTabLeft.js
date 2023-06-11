@@ -15,7 +15,7 @@ const ProductTabLeft = ({ location, product }) => {
   return (
     <Fragment>
       <MetaTags>
-        <title>PartyPaLs | Product Page</title>
+        <title>PartyPaLs | Sản Phẩm</title>
         <meta
           name="description"
           content="Product page of flone react minimalist eCommerce template."
@@ -24,7 +24,7 @@ const ProductTabLeft = ({ location, product }) => {
 
       <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + pathname}>
-        Shop Product
+        Sản Phẩm
       </BreadcrumbsItem>
 
       <LayoutOne headerTop="visible">

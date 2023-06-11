@@ -49,7 +49,7 @@ const ShopGridFilter = ({location, products}) => {
     return (
         <Fragment>
             <MetaTags>
-                <title>PartyPaLs | Shop Page</title>
+                <title>PartyPaLs | Cửa hàng</title>
                 <meta name="description" content="Shop page of flone react minimalist eCommerce template." />
             </MetaTags>
 

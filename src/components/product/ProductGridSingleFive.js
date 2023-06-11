@@ -74,14 +74,14 @@ const ProductGridSingleFive = ({
                   {discountedPrice !== null ? (
                     <Fragment>
                       <span>
-                        {currency.currencySymbol + finalDiscountedPrice}
+                        { finalDiscountedPrice + " VNĐ"}
                       </span>{" "}
                       <span className="old">
-                        {currency.currencySymbol + finalProductPrice}
+                        { finalProductPrice + " VNĐ"}
                       </span>
                     </Fragment>
                   ) : (
-                    <span>{currency.currencySymbol + finalProductPrice} </span>
+                    <span>{ finalProductPrice + " VNĐ"} </span>
                   )}
                 </div>
                 <div className="product-action-3">

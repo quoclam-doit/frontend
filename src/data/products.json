@@ -2,7 +2,7 @@
   {
     "id": "1",
     "sku": "asdf123",
-    "name": "Plastic chair with wooden legs",
+    "name": "Ghế nhựa chân gỗ",
     "price": 12.45,
     "discount": 10,
     "offerEnd": "October 5, 2022 12:11:00",
@@ -92,7 +92,7 @@
   {
     "id": "2",
     "sku": "asdf124",
-    "name": "Fabric chair with wooden legs",
+    "name": "Ghế vải chân gỗ",
     "price": 18.5,
     "discount": 15,
     "new": false,
@@ -181,7 +181,7 @@
   {
     "id": "3",
     "sku": "asdf125",
-    "name": "Plastic chair with wooden legs",
+    "name": "Ghế nhựa chân gỗ",
     "price": 17.45,
     "discount": 40,
     "offerEnd": "October 2, 2022 12:11:00",
@@ -271,14 +271,14 @@
   {
     "id": "4",
     "sku": "asdf126",
-    "name": "Fabric chair with wooden legs",
+    "name": "Ghế vải chân gỗ",
     "price": 15.5,
     "discount": 0,
     "new": true,
     "rating": 4,
     "saleCount": 20,
     "category": [
-     "chair"
+      "chair"
     ],
     "tag": [
       "chair"
@@ -360,7 +360,7 @@
   {
     "id": "5",
     "sku": "asdf127",
-    "name": "Fabric chair with wooden legs",
+    "name": "Ghế vải chân gỗ",
     "price": 25.5,
     "discount": 10,
     "new": true,
@@ -449,7 +449,7 @@
   {
     "id": "6",
     "sku": "asdf128",
-    "name": "Plastic chair with wooden legs",
+    "name": "Ghế nhựa chân gỗ",
     "price": 19.85,
     "discount": 0,
     "offerEnd": "October 17, 2022 12:11:00",

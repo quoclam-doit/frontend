@@ -18,13 +18,13 @@ const ShopTopActionFilter = ({
             <select
               onChange={e => getFilterSortParams("filterSort", e.target.value)}
             >
-              <option value="default">Default</option>
-              <option value="priceHighToLow">Price - High to Low</option>
-              <option value="priceLowToHigh">Price - Low to High</option>
+              <option value="default">Mặc định</option>
+              <option value="priceHighToLow">Giá - Cao đến Thấp</option>
+              <option value="priceLowToHigh">Giá - Thấp Đến Cao</option>
             </select>
           </div>
           <p>
-            Showing {sortedProductCount} of {productCount} result
+          Hiển thị {sortedProductCount} trên {productCount} kết quả
           </p>
         </div>
 

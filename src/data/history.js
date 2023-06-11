@@ -20,7 +20,7 @@ export const  History =[
         "date": "21-05-2023", 
         "color": "Blue", 
         "quantity": 5,
-        "price": 19.99,
+        "price": 20.00,
         "status": "Đã Nhận Cọc"
     },
     { 

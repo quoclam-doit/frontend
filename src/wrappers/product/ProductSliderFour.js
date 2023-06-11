@@ -32,8 +32,8 @@ const ProductSliderFour = ({ spaceBottomClass, category }) => {
     >
       <div className="container">
         <SectionTitleSeven
-          titleText="New Products"
-          subtitleText="Some new products are researched by our company and you can refer."
+          titleText="Sản phẩm mới"
+          subtitleText="Một số sản phẩm mới do công ty chúng tôi nghiên cứu quý khách có thể tham khảo."
           spaceClass="mb-55"
           borderClass="no-border"
           positionClass="text-center"

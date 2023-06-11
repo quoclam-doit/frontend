@@ -28,7 +28,7 @@ const OrderDetail = ({ location }) => {
     return (
         <Fragment>
             <MetaTags>
-                <title>PartyPaLs | Order Detail</title>
+                <title>PartyPaLs | Chi tiết đặt hàng</title>
                 <meta
                     name="description"
                     content="Compare page of flone react minimalist eCommerce template."
@@ -36,7 +36,7 @@ const OrderDetail = ({ location }) => {
             </MetaTags>
             <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
             <BreadcrumbsItem to={process.env.PUBLIC_URL + pathname}>
-                Order Detail
+                Chỉ Tiết Đặt Hàng
             </BreadcrumbsItem>
             <LayoutOne headerTop="visible">
                 {/* breadcrumb */}
@@ -51,7 +51,7 @@ const OrderDetail = ({ location }) => {
                                     <MDBCard style={{ borderRadius: "10px" }}>
                                         <MDBCardHeader className="px-4 py-5" style={{ display: 'flex', justifyContent: 'space-between' }}>
                                             <MDBTypography style={{ paddingTop: '30px' }} tag="h3" className="text-muted mb-0">
-                                                Thanks for your Order,{" "}
+                                                Cảm ơn đã đặt hàng,{" "}
                                                 <span style={{ color: "#a8729a" }}>Anh Tuấn</span>!
                                             </MDBTypography>
                                             <MDBCardImage
@@ -65,10 +65,10 @@ const OrderDetail = ({ location }) => {
                                                     className="lead fw-normal mb-0"
                                                     style={{ color: "#a8729a" }}
                                                 >
-                                                    Receipt
+                                                    Biên Lai
                                                 </p>
                                                 <p className="small text-muted mb-0">
-                                                    Receipt Code : C205
+                                                    Mã Biên Lai : C205
                                                 </p>
                                             </div>
 
@@ -86,33 +86,33 @@ const OrderDetail = ({ location }) => {
                                                             md="2"
                                                             className="text-center d-flex justify-content-center align-items-center"
                                                         >
-                                                            <p className="text-muted mb-0">Plastic chair with wooden legs</p>
+                                                            <p className="text-muted mb-0">Ghế nhựa chân gỗ</p>
                                                         </MDBCol>
                                                         <MDBCol
                                                             md="2"
                                                             className="text-center d-flex justify-content-center align-items-center"
                                                         >
-                                                            <p className="text-muted mb-0 small">Red</p>
+                                                            <p className="text-muted mb-0 small">Đỏ</p>
                                                         </MDBCol>
                                                         <MDBCol
                                                             md="2"
                                                             className="text-center d-flex justify-content-center align-items-center"
                                                         >
                                                             <p className="text-muted mb-0 small">
-                                                                Company: GS25
+                                                                Công Ty: GS25
                                                             </p>
                                                         </MDBCol>
                                                         <MDBCol
                                                             md="2"
                                                             className="text-center d-flex justify-content-center align-items-center"
                                                         >
-                                                            <p className="text-muted mb-0 small">Qty: 1</p>
+                                                            <p className="text-muted mb-0 small">Số Lượng: 1</p>
                                                         </MDBCol>
                                                         <MDBCol
                                                             md="2"
                                                             className="text-center d-flex justify-content-center align-items-center"
                                                         >
-                                                            <p className="text-muted mb-0 small">$10.99</p>
+                                                            <p className="text-muted mb-0 small">10.99 VNĐ</p>
                                                         </MDBCol>
                                                     </MDBRow>
                                                     <hr
@@ -149,33 +149,33 @@ const OrderDetail = ({ location }) => {
                                                             md="2"
                                                             className="text-center d-flex justify-content-center align-items-center"
                                                         >
-                                                            <p className="text-muted mb-0">Plastic chair with wooden legs</p>
+                                                            <p className="text-muted mb-0">Ghế nhựa chân gỗ</p>
                                                         </MDBCol>
                                                         <MDBCol
                                                             md="2"
                                                             className="text-center d-flex justify-content-center align-items-center"
                                                         >
-                                                            <p className="text-muted mb-0 small">Blue</p>
+                                                            <p className="text-muted mb-0 small">Xanh dương</p>
                                                         </MDBCol>
                                                         <MDBCol
                                                             md="2"
                                                             className="text-center d-flex justify-content-center align-items-center"
                                                         >
                                                             <p className="text-muted mb-0 small">
-                                                                Company: GS25
+                                                                Công Ty: GS25
                                                             </p>
                                                         </MDBCol>
                                                         <MDBCol
                                                             md="2"
                                                             className="text-center d-flex justify-content-center align-items-center"
                                                         >
-                                                            <p className="text-muted mb-0 small">Qty: 1</p>
+                                                            <p className="text-muted mb-0 small">Số Lượng: 1</p>
                                                         </MDBCol>
                                                         <MDBCol
                                                             md="2"
                                                             className="text-center d-flex justify-content-center align-items-center"
                                                         >
-                                                            <p className="text-muted mb-0 small">$19.99</p>
+                                                            <p className="text-muted mb-0 small">19.99 VNĐ</p>
                                                         </MDBCol>
                                                     </MDBRow>
                                                     <hr
@@ -192,35 +192,35 @@ const OrderDetail = ({ location }) => {
                                             </MDBCard>
 
                                             <div className="d-flex justify-content-between pt-2">
-                                                <p className="fw-bold mb-0">Order Details</p>
+                                                <p className="fw-bold mb-0">Chi tiết đặt hàng</p>
                                                 <p className="text-muted mb-0">
-                                                    <span className="fw-bold me-4">Total</span> $30.98
+                                                    <span className="fw-bold me-4">Tổng cộng</span> 30.98 VNĐ
                                                 </p>
                                             </div>
 
                                             <div className="d-flex justify-content-between pt-2">
-                                                <p className="text-muted mb-0">Invoice Number : 788152</p>
+                                                <p className="text-muted mb-0">Số hóa đơn : 788152</p>
                                                 <p className="text-muted mb-0">
-                                                    <span className="fw-bold me-4">Discount</span> $0
+                                                    <span className="fw-bold me-4">Giảm giá</span> 0 VNĐ
                                                 </p>
                                             </div>
 
                                             <div className="d-flex justify-content-between">
                                                 <p className="text-muted mb-0">
-                                                    Invoice Date : 27 May,2023
+                                                    Ngày hóa đơn : 27 May,2023
                                                 </p>
                                                 <p className="text-muted mb-0">
-                                                    <span className="fw-bold me-4">GST 10%</span> $3.098
+                                                    <span className="fw-bold me-4">Thuế 10%</span> 3.098 VNĐ
                                                 </p>
                                             </div>
 
                                             <div className="d-flex justify-content-between mb-5">
                                                 <p className="text-muted mb-0">
-                                                    Recepits Voucher : 18KU-62IIK
+                                                    Phiếu thu : 18KU-62IIK
                                                 </p>
                                                 <p className="text-muted mb-0">
-                                                    <span className="fw-bold me-4">Delivery Charges</span>{" "}
-                                                    Free
+                                                    <span className="fw-bold me-4">Phí vận chuyển</span>{" "}
+                                                    Miễn phí
                                                 </p>
                                             </div>
                                         </MDBCardBody>
@@ -236,7 +236,7 @@ const OrderDetail = ({ location }) => {
                                                 tag="h5"
                                                 className="d-flex align-items-center justify-content-end text-white text-uppercase mb-0"
                                             >
-                                                Total paid: <span className="h2 mb-0 ms-2">$34.078</span>
+                                                Tổng Thanh Toán: <span className="h2 mb-0 ms-2">34.078 VNĐ</span>
                                             </MDBTypography>
                                         </MDBCardFooter>
                                     </MDBCard>

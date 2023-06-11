@@ -12,7 +12,7 @@ const Contact = ({ location }) => {
   return (
     <Fragment>
       <MetaTags>
-        <title>PartyPaLs | Contact</title>
+        <title>PartyPaLs | Liên Hệ</title>
         <meta
           name="description"
           content="Contact of flone react minimalist eCommerce template."
@@ -20,7 +20,7 @@ const Contact = ({ location }) => {
       </MetaTags>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + pathname}>
-        Contact
+        Contact Us
       </BreadcrumbsItem>
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
@@ -88,7 +88,7 @@ const Contact = ({ location }) => {
               <div className="col-lg-8 col-md-7">
                 <div className="contact-form">
                   <div className="contact-title mb-30">
-                    <h2>Get In Touch</h2>
+                    <h2>Liên Lạc</h2>
                   </div>
                   <form className="contact-form-style">
                     <div className="row">

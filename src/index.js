@@ -15,6 +15,9 @@ import * as serviceWorker from "./serviceWorker";
 
 import { composeWithDevTools } from "redux-devtools-extension";
 
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+
+
 const store = createStore(
   rootReducer,
   load(),
