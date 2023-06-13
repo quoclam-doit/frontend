@@ -16,6 +16,8 @@ import * as serviceWorker from "./serviceWorker";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 
 const store = createStore(
@@ -30,6 +32,17 @@ store.dispatch(fetchProducts(products));
 ReactDOM.render(
   <Provider store={store}>
     <App />
+    <ToastContainer
+        position="bottom-left"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
   </Provider>,
   document.getElementById("root")
 );
