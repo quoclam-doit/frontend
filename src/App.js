@@ -40,6 +40,9 @@ const Checkout = lazy(() => import("./pages/other/Checkout"));
 const NotFound = lazy(() => import("./pages/other/NotFound"));
 
 const App = (props) => {
+
+const isChecked = localStorage.getItem('access_token') == null ? false : true
+
   useEffect(() => {
     props.dispatch(
       loadLanguages({
@@ -102,7 +105,7 @@ const App = (props) => {
                 {/* Shop product pages */}
                 
                 <Route
-                  path={process.env.PUBLIC_URL + "/product-tab-left/:id"}
+                  path={process.env.PUBLIC_URL + "/product/:id"}
                   component={ProductTabLeft}
                 />
                 
@@ -130,7 +133,7 @@ const App = (props) => {
                 />
                 <Route
                   path={process.env.PUBLIC_URL + "/login-register"}
-                  component={LoginRegister}
+                  component={!isChecked ? LoginRegister : HomeFashionEight}
                 />
                 <Route
                   path={process.env.PUBLIC_URL + "/order-history"}

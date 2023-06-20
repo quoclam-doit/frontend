@@ -95,7 +95,7 @@ const FooterOne = ({
               }`}
             >
               <div className="footer-title">
-                <h3>HỮU ÍCH</h3>
+                <h3>USEFUL LINKS</h3>
               </div>
               <div className="footer-list">
                 <ul>

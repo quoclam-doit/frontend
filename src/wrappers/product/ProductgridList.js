@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { connect } from "react-redux";
 import { addToCart } from "../../redux/actions/cartActions";
 import { addToWishlist } from "../../redux/actions/wishlistActions";
 import { addToCompare } from "../../redux/actions/compareActions";
 import ProductGridListSingle from "../../components/product/ProductGridListSingle";
+import axiosClient from "../../axiosClient";
 
 const ProductGrid = ({
   products,
@@ -18,6 +19,10 @@ const ProductGrid = ({
   sliderClassName,
   spaceBottomClass
 }) => {
+  useEffect(async() => {
+    const data = await axiosClient.get("product")
+    console.log(data);
+  }, []);
   return (
     <Fragment>
       {products.map(product => {

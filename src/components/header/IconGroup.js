@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
+import { Link, useHistory } from "react-router-dom";
+import { connect, useDispatch, useSelector } from "react-redux";
 import MenuCart from "./sub-components/MenuCart";
 import { deleteFromCart } from "../../redux/actions/cartActions";
 import Notifications from "react-notifications-menu";
+
 
 const IconGroup = ({
   currency,
@@ -14,9 +15,16 @@ const IconGroup = ({
   deleteFromCart,
   iconWhiteClass
 }) => {
+
+  const dispatch = useDispatch();
+
+  const history = useHistory();
+
   const handleClick = e => {
     e.currentTarget.nextSibling.classList.toggle("active");
   };
+
+  const isLogin = localStorage.getItem('access_token') == null ? false : true
 
   const triggerMobileMenu = () => {
     const offcanvasMobileMenu = document.querySelector(
@@ -25,27 +33,29 @@ const IconGroup = ({
     offcanvasMobileMenu.classList.add("active");
   };
 
+  const userData = useSelector(
+    (state) => state.userReducer.user
+  );
+
+  const Logout = () => {
+    localStorage.removeItem('access_token');
+    dispatch({ type: "SET_USER_INFORMATION", payload: null });
+    history.push("/login-register");
+  }
+
+  console.log("Chạy tới dòng này", userData);
+
   return (
     <div
       className={`header-right-wrap ${iconWhiteClass ? iconWhiteClass : ""}`}
     >
       <div className="same-style header-search d-none d-lg-block">
-        {/* <button className="search-active" onClick={e => handleClick(e)}>
-          <i className="pe-7s-search" />
-        </button>
-        <div className="search-content">
-          <form action="#">
-            <input type="text" placeholder="Search" />
-            <button className="button-search">
-              <i className="pe-7s-search" />
-            </button>
-          </form>
-        </div> */}
+        {isLogin && 
         <Notifications
-          style={{ marginLeft: '-100px', zIndex:'220'}}
+          style={{ marginLeft: '-100px', zIndex: '220' }}
           data={[
             {
-              image: 'https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/322484761_723859952382239_4232805868826205914_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fP7VDqWloPIAX-dYw6y&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfDSqCDxlN51n_X3Au87HcF8c8eaztIrNWX6bHMuk3_FDg&oe=64854952',
+              image: '/assets/img/team/2.jpg',
               message: (
                 <p>
                   Tuấn Anh Trần had shared a{' '}
@@ -55,7 +65,7 @@ const IconGroup = ({
               detailPage: '/',
             },
             {
-              image: 'https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/322484761_723859952382239_4232805868826205914_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=fP7VDqWloPIAX-dYw6y&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfDSqCDxlN51n_X3Au87HcF8c8eaztIrNWX6bHMuk3_FDg&oe=64854952',
+              image: '/assets/img/team/2.jpg',
               message: (
                 <p>
                   Tuấn Anh Trần had shared a{' '}
@@ -71,38 +81,10 @@ const IconGroup = ({
           }}
           className="okrjoy"
           icon={'https://cdn-icons-png.flaticon.com/512/3119/3119338.png'}
-        />
+        />}
+
       </div>
-      <div className="same-style account-setting d-none d-lg-block">
-        <button
-          className="account-setting-active"
-          onClick={e => handleClick(e)}
-        >
-          <i className="pe-7s-user-female" />
-        </button>
-        <div className="account-dropdown">
-          <ul>
-            <li>
-              <Link to={process.env.PUBLIC_URL + "/login-register"}>Đăng nhập</Link>
-            </li>
-            <li>
-              <Link to={process.env.PUBLIC_URL + "/my-account"}>
-                Tài khoản
-              </Link>
-            </li>
-            <li>
-              <Link to={process.env.PUBLIC_URL + "/order-history"}>
-                Lịch sử
-              </Link>
-            </li>
-            <li>
-              <Link to={process.env.PUBLIC_URL + "/order-detail"}>
-                Đơn hàng
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+
       <div className="same-style header-compare">
         <Link to={process.env.PUBLIC_URL + "/compare"}>
           <i className="pe-7s-shuffle" />
@@ -148,6 +130,55 @@ const IconGroup = ({
         >
           <i className="pe-7s-menu" />
         </button>
+      </div>
+      <div style={{paddingRight:'10px'}}></div>
+      <div className="same-style account-setting d-none d-lg-block">
+        {!isLogin &&
+          <button
+            className="account-setting-active"
+          >
+
+            <Link to={process.env.PUBLIC_URL + "/login-register"}><i className="pe-7s-user" /></Link>
+          </button>
+        }
+        <a style={{fontSize:'15px', whiteSpace:'nowrap'}} onClick={e => handleClick(e)} >{userData && userData.name}</a>
+
+        <div className="account-dropdown">
+          <ul>
+            {!isLogin &&
+              <li>
+
+              </li>
+            }
+            {isLogin &&
+              <>
+                <li>
+                  <Link to={process.env.PUBLIC_URL + "/my-account"}>
+                    Tài khoản
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to={process.env.PUBLIC_URL + "/order-history"}>
+                    Lịch sử
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to={process.env.PUBLIC_URL + "/order-detail"}>
+                    Đơn hàng
+                  </Link>
+                </li>
+
+                <li>
+                  <a onClick={() => Logout()}>
+                    Đăng xuất
+                  </a>
+                </li>
+              </>
+            }
+          </ul>
+        </div>
       </div>
     </div>
   );

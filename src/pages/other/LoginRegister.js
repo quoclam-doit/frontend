@@ -10,14 +10,18 @@ import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 import axiosClient from "../../axiosClient";
 import { toast } from "react-toastify";
 import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 const LoginRegister = ({ location }) => {
   const history = useHistory();
   const { pathname } = location;
 
+  const [name, setName] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [activeTab, setActiveTab] = useState("login");
 
   const [redirectToHome, setRedirectToHome] = useState(false);
   useEffect(() => {
@@ -25,6 +29,14 @@ const LoginRegister = ({ location }) => {
       history.push("/home");
     }
   }, [redirectToHome, history]);
+
+  const [redirectToLogin, setRedirectToLogin] = useState(false);
+  useEffect(() => {
+    if (redirectToLogin) {
+      history.push("/login-register");
+    }
+  }, [redirectToLogin, history]);
+  const dispatch = useDispatch();
 
   const handleLogin = async (event) => {
     event.preventDefault();
@@ -34,10 +46,12 @@ const LoginRegister = ({ location }) => {
 
     try {
       const data = await axiosClient.post("signIn", {
-        email: username,
+        username: username,
         password: password,
       });
       localStorage.setItem("access_token", data.token);
+      dispatch({type: "SET_USER_INFORMATION", payload: data.user});
+      console.log(data);
       toast.success("Login Successfull");
       setRedirectToHome(true);
     } catch (error) {
@@ -47,22 +61,40 @@ const LoginRegister = ({ location }) => {
     // const data = await axiosClient.put(`signIn/${}`,{email: username, password: password});
     // const data = await axiosClient.delete(`signIn/${}`);
     // Reset giá trị trong form
-    // setUsername("");
-    // setPassword("");
+    setUsername("");
+    setPassword("");
   };
 
-  const handleRegistration = (event) => {
+  const handleRegistration = async (event) => {
     event.preventDefault();
 
     // Làm gì đó với username, password và email
+    console.log("name", name);
     console.log("Username:", username);
     console.log("Password:", password);
     console.log("Email:", email);
+    console.log("Phone:", phone);
 
     // Reset giá trị trong form
+    setName("");
     setUsername("");
     setPassword("");
     setEmail("");
+    setPhone("");
+
+    try {
+      const dataRegister = await axiosClient.post("signUp", {
+        name: name,
+        username: username,
+        password: password,
+        email: email,
+        phone: phone
+      });
+      toast.success(dataRegister.message);
+      setRedirectToLogin(true);
+    } catch (error) {
+      toast.error(error.response.data.message);
+    }
   };
 
   return (
@@ -86,15 +118,21 @@ const LoginRegister = ({ location }) => {
             <div className="row">
               <div className="col-lg-7 col-md-12 ml-auto mr-auto">
                 <div className="login-register-wrapper">
-                  <Tab.Container defaultActiveKey="login">
+                  <Tab.Container defaultActiveKey={activeTab}>
                     <Nav variant="pills" className="login-register-tab-list">
                       <Nav.Item>
-                        <Nav.Link eventKey="login">
+                        <Nav.Link
+                          eventKey="login"
+                          onClick={() => setActiveTab("login")}
+                        >
                           <h4>Đăng nhập</h4>
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="register">
+                        <Nav.Link
+                          eventKey="register"
+                          onClick={() => setActiveTab("register")}
+                        >
                           <h4>Đăng kí</h4>
                         </Nav.Link>
                       </Nav.Item>
@@ -142,6 +180,15 @@ const LoginRegister = ({ location }) => {
                         <div className="login-form-container">
                           <div className="login-register-form">
                             <form onSubmit={handleRegistration}>
+                            <input
+                                name="name"
+                                placeholder="Họ và Tên"
+                                type="name"
+                                value={name}
+                                onChange={(event) =>
+                                  setName(event.target.value)
+                                }
+                              />
                               <input
                                 type="text"
                                 name="user-name"
@@ -167,6 +214,15 @@ const LoginRegister = ({ location }) => {
                                 value={email}
                                 onChange={(event) =>
                                   setEmail(event.target.value)
+                                }
+                              />
+                              <input
+                                name="user-phone"
+                                placeholder="Số Điện Thoại"
+                                type="phone"
+                                value={phone}
+                                onChange={(event) =>
+                                  setPhone(event.target.value)
                                 }
                               />
                               <div className="button-box">

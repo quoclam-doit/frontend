@@ -84,7 +84,7 @@ const Wishlist = ({
                                   <Link
                                     to={
                                       process.env.PUBLIC_URL +
-                                      "/product-tab-left/" +
+                                      "/product/" +
                                       wishlistItem.id
                                     }
                                   >
@@ -103,7 +103,7 @@ const Wishlist = ({
                                   <Link
                                     to={
                                       process.env.PUBLIC_URL +
-                                      "/product-tab-left/" +
+                                      "/product/" +
                                       wishlistItem.id
                                     }
                                   >
@@ -144,7 +144,7 @@ const Wishlist = ({
                                   ) : wishlistItem.variation &&
                                     wishlistItem.variation.length >= 1 ? (
                                     <Link
-                                      to={`${process.env.PUBLIC_URL}/product-tab-left/${wishlistItem.id}`}
+                                      to={`${process.env.PUBLIC_URL}/product/${wishlistItem.id}`}
                                     >
                                       Tùy Chọn
                                     </Link>

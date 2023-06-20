@@ -35,68 +35,11 @@ const Checkout = ({ location, cartItems, currency }) => {
               <div className="row">
                 <div className="col-lg-7">
                   <div className="billing-info-wrap">
-                    <h3>Chi Tiết Thanh Toán</h3>
+                    <h3>Thông Tin Thanh Toán</h3>
                     <div className="row">
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
-                          <label>Tên</label>
-                          <input type="text" />
-                        </div>
-                      </div>
-                      <div className="col-lg-6 col-md-6">
-                        <div className="billing-info mb-20">
-                          <label>Họ</label>
-                          <input type="text" />
-                        </div>
-                      </div>
-                      <div className="col-lg-12">
-                        <div className="billing-info mb-20">
-                          <label>Tên Công Ty</label>
-                          <input type="text" />
-                        </div>
-                      </div>
-                      <div className="col-lg-12">
-                        <div className="billing-select mb-20">
-                          <label>Quốc Gia</label>
-                          <select>
-                            <option>Chọn Quốc Gia</option>
-                            <option>Azerbaijan</option>
-                            <option>Bahamas</option>
-                            <option>Bahrain</option>
-                            <option>Bangladesh</option>
-                            <option>Barbados</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div className="col-lg-12">
-                        <div className="billing-info mb-20">
-                          <label>Tên Đường</label>
-                          <input
-                            className="billing-address"
-                            placeholder="House number and street name"
-                            type="text"
-                          />
-                          <input
-                            placeholder="Apartment, suite, unit etc."
-                            type="text"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-12">
-                        <div className="billing-info mb-20">
-                          <label>Thị trấn / Thành phố</label>
-                          <input type="text" />
-                        </div>
-                      </div>
-                      <div className="col-lg-6 col-md-6">
-                        <div className="billing-info mb-20">
-                          <label>Tiểu bang / Quận</label>
-                          <input type="text" />
-                        </div>
-                      </div>
-                      <div className="col-lg-6 col-md-6">
-                        <div className="billing-info mb-20">
-                          <label>Mã bưu / Zip</label>
+                          <label>Họ và Tên</label>
                           <input type="text" />
                         </div>
                       </div>
@@ -106,9 +49,9 @@ const Checkout = ({ location, cartItems, currency }) => {
                           <input type="text" />
                         </div>
                       </div>
-                      <div className="col-lg-6 col-md-6">
+                      <div className="col-lg-12">
                         <div className="billing-info mb-20">
-                          <label>Email</label>
+                          <label>Địa Chỉ</label>
                           <input type="text" />
                         </div>
                       </div>
@@ -165,12 +108,12 @@ const Checkout = ({ location, cartItems, currency }) => {
                                   </span>{" "}
                                   <span className="order-price">
                                     {discountedPrice !== null
-                                      ? 
+                                      ?
                                       (
                                         finalDiscountedPrice *
                                         cartItem.quantity
                                       ).toFixed(2) + " VNĐ"
-                                      : 
+                                      :
                                       (
                                         finalProductPrice * cartItem.quantity
                                       ).toFixed(2) + " VNĐ"}
@@ -204,15 +147,15 @@ const Checkout = ({ location, cartItems, currency }) => {
                     <div>
                       <MDBAccordion >
                         <MDBAccordionItem collapseId={1} headerTitle={
-                            <div style={{ display: "flex", alignItems: "center" }}>
-                              <img
-                                src="./assets/img/logo/momo.png"
-                                alt="Logo Momo"
-                                style={{ width: "20px", marginRight: "10px" }}
-                              />
-                              THANH TOÁN BẰNG MOMO
-                            </div>
-                          }>
+                          <div style={{ display: "flex", alignItems: "center" }}>
+                            <img
+                              src="./assets/img/logo/momo.png"
+                              alt="Logo Momo"
+                              style={{ width: "20px", marginRight: "10px" }}
+                            />
+                            THANH TOÁN BẰNG MOMO
+                          </div>
+                        }>
                           <MDBContainer>
                             <MDBRow>
                               <p>Mở ứng dụng momo và chọn <strong>QUÉT MÃ</strong></p>
@@ -234,15 +177,15 @@ const Checkout = ({ location, cartItems, currency }) => {
                       <div style={{ padding: '15px' }}></div>
                       <MDBAccordion >
                         <MDBAccordionItem collapseId={2} headerTitle={
-                            <div style={{ display: "flex", alignItems: "center" }}>
-                              <img
-                                src="./assets/img/logo/tpbank.png"
-                                alt="Logo TP Bank"
-                                style={{ width: "20px", marginRight: "10px" }}
-                              />
-                              THANH TOÁN BẰNG NGÂN HÀNG
-                            </div>
-                          }>
+                          <div style={{ display: "flex", alignItems: "center" }}>
+                            <img
+                              src="./assets/img/logo/tpbank.png"
+                              alt="Logo TP Bank"
+                              style={{ width: "20px", marginRight: "10px" }}
+                            />
+                            THANH TOÁN BẰNG NGÂN HÀNG
+                          </div>
+                        }>
                           <MDBContainer>
                             <MDBRow>
                               <p>Mở ứng dụng Banking và chọn <strong>QUÉT MÃ</strong></p>

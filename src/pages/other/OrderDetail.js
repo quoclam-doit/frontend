@@ -67,9 +67,6 @@ const OrderDetail = ({ location }) => {
                                                 >
                                                     Biên Lai
                                                 </p>
-                                                <p className="small text-muted mb-0">
-                                                    Mã Biên Lai : C205
-                                                </p>
                                             </div>
 
                                             <MDBCard className="shadow-0 border mb-4">
@@ -126,7 +123,7 @@ const OrderDetail = ({ location }) => {
                                                         <MDBCol md="10">
                                                             <div className="d-flex justify-content mb-1">
                                                                 <p className="text-muted mt-1 mb-0 small ms-xl-5">
-                                                                   Giao ghế trước 7h
+                                                                    Giao ghế trước 7h
                                                                 </p>
                                                             </div>
                                                         </MDBCol>

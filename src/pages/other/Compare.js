@@ -68,7 +68,7 @@ const Compare = ({
                                   <Link
                                     to={
                                       process.env.PUBLIC_URL +
-                                      "/product-tab-left/" +
+                                      "/product/" +
                                       compareItem.id
                                     }
                                     className="image"
@@ -86,7 +86,7 @@ const Compare = ({
                                     <Link
                                       to={
                                         process.env.PUBLIC_URL +
-                                        "/product-tab-left/" +
+                                        "/product/" +
                                         compareItem.id
                                       }
                                     >
@@ -106,7 +106,7 @@ const Compare = ({
                                     ) : compareItem.variation &&
                                       compareItem.variation.length >= 1 ? (
                                       <Link
-                                        to={`${process.env.PUBLIC_URL}/product-tab-left/${compareItem.id}`}
+                                        to={`${process.env.PUBLIC_URL}/product/${compareItem.id}`}
                                       >
                                         Select Option
                                       </Link>

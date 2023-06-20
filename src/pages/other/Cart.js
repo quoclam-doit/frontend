@@ -91,7 +91,7 @@ const Cart = ({
                                   <Link
                                     to={
                                       process.env.PUBLIC_URL +
-                                      "/product-tab-left/" +
+                                      "/product/" +
                                       cartItem.id
                                     }
                                   >
@@ -110,7 +110,7 @@ const Cart = ({
                                   <Link
                                     to={
                                       process.env.PUBLIC_URL +
-                                      "/product-tab-left/" +
+                                      "/product/" +
                                       cartItem.id
                                     }
                                   >
@@ -322,7 +322,7 @@ const Cart = ({
                         </span>
                       </h4>
                       <Link to={process.env.PUBLIC_URL + "/checkout"}>
-                        Kiểm Tra
+                        Thanh Toán
                       </Link>
                     </div>
                   </div>

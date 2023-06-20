@@ -247,13 +247,13 @@ const ProductDescriptionInfo = ({
       <div className="pro-details-social">
         <ul>
           <li>
-            <a href="//facebook.com">
+            <a href="https://www.facebook.com/partypals.info">
               <i className="fa fa-facebook" />
             </a>
           </li>
 
           <li>
-            <a href="//linkedin.com">
+            <a href="https://www.instagram.com/partypals.info/">
               <i className="fa fa-instagram" />
             </a>
           </li>
