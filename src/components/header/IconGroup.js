@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
-import React from "react";
+import React,{useEffect} from "react";
 import { Link, useHistory } from "react-router-dom";
 import { connect, useDispatch, useSelector } from "react-redux";
 import MenuCart from "./sub-components/MenuCart";
 import { deleteFromCart } from "../../redux/actions/cartActions";
 import Notifications from "react-notifications-menu";
+import axiosClient from "../../axiosClient";
 
 
 const IconGroup = ({
@@ -20,6 +21,13 @@ const IconGroup = ({
 
   const history = useHistory();
 
+  useEffect(async () => {
+    const data = await axiosClient.get("user")
+    // console.log("data",data);
+    data && dispatch({ type: "SET_USER_INFORMATION", payload: data.user });
+
+  }, []);
+  
   const handleClick = e => {
     e.currentTarget.nextSibling.classList.toggle("active");
   };
@@ -49,41 +57,7 @@ const IconGroup = ({
     <div
       className={`header-right-wrap ${iconWhiteClass ? iconWhiteClass : ""}`}
     >
-      <div className="same-style header-search d-none d-lg-block">
-        {isLogin && 
-        <Notifications
-          style={{ marginLeft: '-100px', zIndex: '220' }}
-          data={[
-            {
-              image: '/assets/img/team/2.jpg',
-              message: (
-                <p>
-                  Tuấn Anh Trần had shared a{' '}
-                  <span style={{ color: '#7ac2fa' }}>feedback</span> with you.
-                </p>
-              ),
-              detailPage: '/',
-            },
-            {
-              image: '/assets/img/team/2.jpg',
-              message: (
-                <p>
-                  Tuấn Anh Trần had shared a{' '}
-                  <span style={{ color: '#7ac2fa' }}>feedback</span> with you.
-                </p>
-              ),
-              detailPage: '/',
-            },
-          ]}
-          header={{
-            title: 'Thông báo',
-            option: { text: 'View All', onClick: () => console.log('Clicked') },
-          }}
-          className="okrjoy"
-          icon={'https://cdn-icons-png.flaticon.com/512/3119/3119338.png'}
-        />}
-
-      </div>
+      
 
       <div className="same-style header-compare">
         <Link to={process.env.PUBLIC_URL + "/compare"}>
@@ -141,7 +115,8 @@ const IconGroup = ({
             <Link to={process.env.PUBLIC_URL + "/login-register"}><i className="pe-7s-user" /></Link>
           </button>
         }
-        <a style={{fontSize:'15px', whiteSpace:'nowrap'}} onClick={e => handleClick(e)} >{userData && userData.name}</a>
+
+        <a style={{fontSize:'15px', whiteSpace:'nowrap'}} onClick={e => handleClick(e)} >{userData && userData?.name}</a>
 
         <div className="account-dropdown">
           <ul>

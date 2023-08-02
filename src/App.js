@@ -9,6 +9,7 @@ import { BreadcrumbsProvider } from "react-breadcrumbs-dynamic";
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import OrderDetail from "./pages/other/OrderDetail";
 import Faq from "./pages/other/Faq";
+import axiosClient from "./axiosClient";
 
 // home pages
 const HomeFashionEight = lazy(() => import("./pages/home/HomeFashionEight"));
@@ -54,11 +55,13 @@ const isChecked = localStorage.getItem('access_token') == null ? false : true
       })
     );
   });
-  
-  useEffect(() => {
+
+
+  useEffect(async() => {
     window.process = {
       ...window.process,
     };
+
   }, []);
 
   return (
@@ -93,11 +96,11 @@ const isChecked = localStorage.getItem('access_token') == null ? false : true
 
                 {/* Shop pages */}
                 <Route
-                  path={process.env.PUBLIC_URL + "/shop-grid-standard"}
+                  path={process.env.PUBLIC_URL + "/collection"}
                   component={ShopGridStandard}
                 />
                 <Route
-                  path={process.env.PUBLIC_URL + "/shop-grid-filter"}
+                  path={process.env.PUBLIC_URL + "/shop"}
                   component={ShopGridFilter}
                 />
                 

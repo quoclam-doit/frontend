@@ -160,7 +160,7 @@ const Checkout = ({ location, cartItems, currency }) => {
                             <MDBRow>
                               <p>Mở ứng dụng momo và chọn <strong>QUÉT MÃ</strong></p>
                               <MDBCol md='6'>
-                                <img src="https://f11-zpc.zdn.vn/922550104966402819/befc3027d15800065949.jpg" style={{ width: '200px' }} alt="image"></img>
+                                <img src="./assets/img/logo/momo2.png" style={{ width: '160px' }} alt="image"></img>
                               </MDBCol>
                               <MDBCol md='6' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly' }}>
                                 <p>Tài Khoản: <strong>0913740946</strong></p>
@@ -169,7 +169,7 @@ const Checkout = ({ location, cartItems, currency }) => {
                                   cartTotalPrice.toFixed(2) + " VNĐ"}</strong></p>
                                 <p>Lời Nhắn: <strong>"Mã Đơn"</strong></p>
                               </MDBCol>
-                              <p>Mã giao dịch MOMO sau khi chuyển tiền:</p>
+                              <p></p>
                             </MDBRow>
                           </MDBContainer>
                         </MDBAccordionItem>
@@ -190,7 +190,7 @@ const Checkout = ({ location, cartItems, currency }) => {
                             <MDBRow>
                               <p>Mở ứng dụng Banking và chọn <strong>QUÉT MÃ</strong></p>
                               <MDBCol md='6'>
-                                <img src="https://f19-zpc.zdn.vn/3609110256941540703/f38e63b096cf47911ede.jpg" style={{ width: '200px' }} alt="image"></img>
+                                <img src="./assets/img/logo/ngân hàng.png" style={{ width: '180px' }} alt="image"></img>
                               </MDBCol>
                               <MDBCol md='6' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly' }}>
                                 <p>Số Tài Khoản: <strong>0363013901</strong></p>
@@ -200,7 +200,7 @@ const Checkout = ({ location, cartItems, currency }) => {
                                   cartTotalPrice.toFixed(2) + " VNĐ"}</strong></p>
                                 <p>Lời Nhắn: <strong>"Mã Đơn"</strong></p>
                               </MDBCol>
-                              <p>Mã giao dịch Banking sau khi chuyển tiền:</p>
+                              <p></p>
                             </MDBRow>
                           </MDBContainer>
                         </MDBAccordionItem>
@@ -221,7 +221,7 @@ const Checkout = ({ location, cartItems, currency }) => {
                     </div>
                     <div className="item-empty-area__text">
                       Không tìm thấy mặt hàng nào trong giỏ hàng để thanh toán <br />{" "}
-                      <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+                      <Link to={process.env.PUBLIC_URL + "/collection"}>
                         Mua Ngay
                       </Link>
                     </div>
