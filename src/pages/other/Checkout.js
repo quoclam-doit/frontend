@@ -160,16 +160,16 @@ const Checkout = ({ location, cartItems, currency }) => {
                             <MDBRow>
                               <p>Mở ứng dụng momo và chọn <strong>QUÉT MÃ</strong></p>
                               <MDBCol md='6'>
-                                <img src="./assets/img/logo/momo2.png" style={{ width: '160px' }} alt="image"></img>
+                                <img src="https://f10-zpcloud.zdn.vn/5270451660064175515/0e6f6fbdcb6718394176.jpg" style={{ width: '200px' }} alt="image"></img>
                               </MDBCol>
                               <MDBCol md='6' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly' }}>
                                 <p>Tài Khoản: <strong>0913740946</strong></p>
                                 <p>Chủ TK: <strong>Trần Anh Tuấn</strong></p>
                                 <p>Tổng Tiền: <strong>{
-                                  cartTotalPrice.toFixed(2) + " VNĐ"}</strong></p>
+                                  cartTotalPrice.toFixed(2) + "K" + " VNĐ"}</strong></p>
                                 <p>Lời Nhắn: <strong>"Mã Đơn"</strong></p>
                               </MDBCol>
-                              <p></p>
+                              <p>Khách hàng sau khi thanh toán vui lòng liên hệ fanpage <a href="https://www.facebook.com/partypals.info"><strong>PartyPaLs</strong></a> để được duyệt đơn hàng</p>
                             </MDBRow>
                           </MDBContainer>
                         </MDBAccordionItem>
@@ -190,24 +190,24 @@ const Checkout = ({ location, cartItems, currency }) => {
                             <MDBRow>
                               <p>Mở ứng dụng Banking và chọn <strong>QUÉT MÃ</strong></p>
                               <MDBCol md='6'>
-                                <img src="./assets/img/logo/ngân hàng.png" style={{ width: '180px' }} alt="image"></img>
+                                <img src="https://f10-zpcloud.zdn.vn/6551761993654869384/c0e1947730ade3f3babc.jpg" style={{ width: '200px' }} alt="image"></img>
                               </MDBCol>
                               <MDBCol md='6' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly' }}>
                                 <p>Số Tài Khoản: <strong>0363013901</strong></p>
                                 <p>Ngân Hàng: <strong>TP BANK</strong></p>
                                 <p>Chủ TK: <strong>Trần Anh Tuấn</strong></p>
                                 <p>Tổng Tiền: <strong>{
-                                  cartTotalPrice.toFixed(2) + " VNĐ"}</strong></p>
+                                  cartTotalPrice.toFixed(2) + "K" + " VNĐ"}</strong></p>
                                 <p>Lời Nhắn: <strong>"Mã Đơn"</strong></p>
                               </MDBCol>
-                              <p></p>
+                              <p>Khách hàng sau khi thanh toán vui lòng liên hệ fanpage <a href="https://www.facebook.com/partypals.info"><strong>PartyPaLs</strong></a> để được duyệt đơn hàng</p>
                             </MDBRow>
                           </MDBContainer>
                         </MDBAccordionItem>
                       </MDBAccordion>
                     </div>
                     <div className="place-order mt-25">
-                      <button className="btn-hover">Đặt Hàng</button>
+                      <button className="btn-hover"><a href="https://www.facebook.com/partypals.info">Liên Hệ Fanpage</a></button>
                     </div>
                   </div>
                 </div>
@@ -248,5 +248,4 @@ const mapStateToProps = state => {
     currency: state.currencyData
   };
 };
-
 export default connect(mapStateToProps)(Checkout);
